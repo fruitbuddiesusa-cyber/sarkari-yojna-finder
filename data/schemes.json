@@ -1759,6 +1759,808 @@
       "howToApply": "Through municipal corporations in covered cities",
       "deadline": "Ongoing",
       "isPopular": false
+    },
+    {
+      "id": "nps-vatsalya",
+      "name": "NPS Vatsalya (Pension for Minors)",
+      "ministry": "Ministry of Finance",
+      "category": "pension",
+      "benefit": "Pension savings for children — guaranteed returns + tax benefits for parents",
+      "benefitAmount": 0,
+      "benefitType": "savings",
+      "description": "Contributory pension scheme for minor children. Parents/guardians can invest for their child's retirement from birth. Minimum ₹1,000/year.",
+      "eligibility": {
+        "occupation": [
+          "all"
+        ],
+        "maxIncome": null,
+        "minAge": 0,
+        "maxAge": 18,
+        "gender": "all",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all",
+        "isStudent": true
+      },
+      "documents": [
+        "Child's Birth Certificate",
+        "Parent's Aadhaar",
+        "Parent's PAN",
+        "Bank Account"
+      ],
+      "applyLink": "https://www.npscra.nsdl.co.in",
+      "howToApply": "Apply through banks, post offices, or online NPS portal",
+      "deadline": "Ongoing",
+      "isPopular": true
+    },
+    {
+      "id": "pm-poshan",
+      "name": "PM POSHAN (Mid-Day Meal Scheme)",
+      "ministry": "Ministry of Education",
+      "category": "education",
+      "benefit": "Free nutritious lunch for school children (Class 1-8) in government schools",
+      "benefitAmount": 0,
+      "benefitType": "food",
+      "description": "Provides free cooked meals to children in government and government-aided schools. Covers 11.80 crore children.",
+      "eligibility": {
+        "occupation": [
+          "student"
+        ],
+        "maxIncome": null,
+        "minAge": 5,
+        "maxAge": 14,
+        "gender": "all",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all",
+        "isStudent": true
+      },
+      "documents": [
+        "School Enrollment"
+      ],
+      "applyLink": "https://poshanabhiyaan.gov.in",
+      "howToApply": "No separate application — provided automatically in government schools",
+      "deadline": "Ongoing",
+      "isPopular": true
+    },
+    {
+      "id": "janani-suraksha",
+      "name": "Janani Suraksha Yojana (JSY)",
+      "ministry": "Ministry of Health & Family Welfare",
+      "category": "health",
+      "benefit": "Cash assistance of ₹600-₹1,400 for institutional delivery",
+      "benefitAmount": 1400,
+      "benefitType": "cash",
+      "description": "Promotes institutional delivery among pregnant women from BPL families. Cash assistance for delivery at government hospitals.",
+      "eligibility": {
+        "occupation": [
+          "all"
+        ],
+        "maxIncome": null,
+        "minAge": 15,
+        "maxAge": 49,
+        "gender": "female",
+        "category": [
+          "sc",
+          "st",
+          "ews",
+          "obc"
+        ],
+        "states": "all",
+        "isBPL": true
+      },
+      "documents": [
+        "Aadhaar Card",
+        "BPL Certificate",
+        "Bank Account",
+        "Pregnancy Registration Card"
+      ],
+      "applyLink": "https://nhm.gov.in",
+      "howToApply": "Register at nearest ASHA worker or health center",
+      "deadline": "Ongoing",
+      "isPopular": true
+    },
+    {
+      "id": "swachh-bharat-urban",
+      "name": "Swachh Bharat Mission - Urban (SBM-U)",
+      "ministry": "Ministry of Housing & Urban Affairs",
+      "category": "welfare",
+      "benefit": "₹12,000 for individual toilet construction + waste management support",
+      "benefitAmount": 12000,
+      "benefitType": "subsidy",
+      "description": "Financial assistance for construction of individual household toilets and community/public toilets in urban areas.",
+      "eligibility": {
+        "occupation": [
+          "all"
+        ],
+        "maxIncome": null,
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "all",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all",
+        "isUrban": true
+      },
+      "documents": [
+        "Aadhaar Card",
+        "House Ownership Proof",
+        "Bank Account"
+      ],
+      "applyLink": "https://sbmurban.org",
+      "howToApply": "Apply through Municipal Corporation or online portal",
+      "deadline": "Ongoing",
+      "isPopular": true
+    },
+    {
+      "id": "jal-jeevan-mission",
+      "name": "Jal Jeevan Mission (Har Ghar Jal)",
+      "ministry": "Ministry of Jal Shakti",
+      "category": "welfare",
+      "benefit": "Functional tap water connection to every rural household",
+      "benefitAmount": 0,
+      "benefitType": "service",
+      "description": "Ensures functional household tap connection (FHTC) to every rural household with adequate quantity and quality water.",
+      "eligibility": {
+        "occupation": [
+          "all"
+        ],
+        "maxIncome": null,
+        "minAge": 0,
+        "maxAge": null,
+        "gender": "all",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all",
+        "isRural": true
+      },
+      "documents": [
+        "Aadhaar Card",
+        "House Proof"
+      ],
+      "applyLink": "https://jalshakti.gov.in",
+      "howToApply": "Through Gram Panchayat — no individual application needed",
+      "deadline": "Ongoing",
+      "isPopular": true
+    },
+    {
+      "id": "ddu-gky",
+      "name": "Deendayal Upadhyaya Grameen Kaushalya Yojana (DDU-GKY)",
+      "ministry": "Ministry of Rural Development",
+      "category": "employment",
+      "benefit": "Free skill training + placement + ₹3,000-₹6,000 stipend during training",
+      "benefitAmount": 6000,
+      "benefitType": "training",
+      "description": "Placement-linked skill training for rural youth from BPL families. Training in 250+ trades with guaranteed placement.",
+      "eligibility": {
+        "occupation": [
+          "unemployed",
+          "daily_wage",
+          "agricultural_worker"
+        ],
+        "maxIncome": null,
+        "minAge": 15,
+        "maxAge": 35,
+        "gender": "all",
+        "category": [
+          "sc",
+          "st",
+          "ews",
+          "obc"
+        ],
+        "states": "all",
+        "isRural": true
+      },
+      "documents": [
+        "Aadhaar Card",
+        "BPL Certificate",
+        "Bank Account",
+        "Educational Certificate"
+      ],
+      "applyLink": "https://ddugky.gov.in",
+      "howToApply": "Register at nearest training center or online",
+      "deadline": "Ongoing",
+      "isPopular": true
+    },
+    {
+      "id": "icds",
+      "name": "Integrated Child Development Services (ICDS)",
+      "ministry": "Ministry of Women & Child Development",
+      "category": "welfare",
+      "benefit": "Free nutrition, immunization, health check-up for children (0-6) and pregnant women",
+      "benefitAmount": 0,
+      "benefitType": "service",
+      "description": "Provides supplementary nutrition, immunization, health check-up, referral services, and pre-school education for children and pregnant women.",
+      "eligibility": {
+        "occupation": [
+          "all"
+        ],
+        "maxIncome": null,
+        "minAge": 0,
+        "maxAge": 6,
+        "gender": "all",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all"
+      },
+      "documents": [
+        "Aadhaar Card",
+        "Child Birth Certificate"
+      ],
+      "applyLink": "https://wcd.nic.in",
+      "howToApply": "Visit nearest Anganwadi center",
+      "deadline": "Ongoing",
+      "isPopular": true
+    },
+    {
+      "id": "national-scholarship-minority",
+      "name": "National Scholarship for Minority Students",
+      "ministry": "Ministry of Minority Affairs",
+      "category": "education",
+      "benefit": "Scholarship up to ₹20,000/year for minority students",
+      "benefitAmount": 20000,
+      "benefitType": "scholarship",
+      "description": "Pre-matric and post-matric scholarship for students from minority communities (Muslim, Christian, Sikh, Buddhist, Jain, Parsi).",
+      "eligibility": {
+        "occupation": [
+          "student"
+        ],
+        "maxIncome": 200000,
+        "minAge": 5,
+        "maxAge": 35,
+        "gender": "all",
+        "category": [
+          "general"
+        ],
+        "states": "all",
+        "isStudent": true,
+        "isMinority": true
+      },
+      "documents": [
+        "Aadhaar Card",
+        "Income Certificate",
+        "Minority Certificate",
+        "Marksheet",
+        "Bank Account"
+      ],
+      "applyLink": "https://scholarships.gov.in",
+      "howToApply": "Apply online at National Scholarship Portal",
+      "deadline": "Usually October-November",
+      "isPopular": true
+    },
+    {
+      "id": "shg-bank-linkage",
+      "name": "SHG-Bank Linkage Programme",
+      "ministry": "Ministry of Finance / NABARD",
+      "category": "business",
+      "benefit": "Bank loans to Self-Help Groups at 7% interest (subsidized)",
+      "benefitAmount": 300000,
+      "benefitType": "loan",
+      "description": "Provides bank credit to Self-Help Groups (SHGs) of poor women for income-generating activities. Interest subvention available.",
+      "eligibility": {
+        "occupation": [
+          "all"
+        ],
+        "maxIncome": null,
+        "minAge": 18,
+        "maxAge": 60,
+        "gender": "female",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all",
+        "isRural": true
+      },
+      "documents": [
+        "SHG Registration",
+        "Aadhaar Card",
+        "Bank Account",
+        "SHG Passbook"
+      ],
+      "applyLink": "https://www.nabard.org",
+      "howToApply": "Through bank branch or SHG federation",
+      "deadline": "Ongoing",
+      "isPopular": false
+    },
+    {
+      "id": "pm-adarsh-gram-yojana",
+      "name": "PM Adarsh Gram Yojana (PMAGY)",
+      "ministry": "Ministry of Social Justice & Empowerment",
+      "category": "welfare",
+      "benefit": "₹20 lakh per village for SC-majority village development",
+      "benefitAmount": 2000000,
+      "benefitType": "grant",
+      "description": "Integrated development of SC-majority villages (50%+ SC population) in education, health, livelihood, and infrastructure.",
+      "eligibility": {
+        "occupation": [
+          "all"
+        ],
+        "maxIncome": null,
+        "minAge": 0,
+        "maxAge": null,
+        "gender": "all",
+        "category": [
+          "sc"
+        ],
+        "states": "all",
+        "isRural": true,
+        "isVillageLevel": true
+      },
+      "documents": [
+        "Village-level proposal through Gram Panchayat",
+        "SC population data"
+      ],
+      "applyLink": "https://socialjustice.gov.in",
+      "howToApply": "Through District Collector / Gram Panchayat",
+      "deadline": "Ongoing",
+      "isPopular": false
+    },
+    {
+      "id": "svavlambi",
+      "name": "PM-SVANidhi to SVAVLAMBI (Street Vendor to Self-Reliant)",
+      "ministry": "Ministry of Housing & Urban Affairs",
+      "category": "business",
+      "benefit": "Upgrade path from SVANidhi to Mudra loan — up to ₹50,000 to ₹10 lakh",
+      "benefitAmount": 1000000,
+      "benefitType": "loan",
+      "description": "Graduation pathway for street vendors who have repaid PM-SVANidhi loans to access higher credit through Mudra.",
+      "eligibility": {
+        "occupation": [
+          "street_vendor"
+        ],
+        "maxIncome": null,
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "all",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all",
+        "isUrban": true
+      },
+      "documents": [
+        "PM-SVANidhi Repayment Certificate",
+        "Aadhaar Card",
+        "Bank Account"
+      ],
+      "applyLink": "https://pmsvanidhi.mohua.gov.in",
+      "howToApply": "Automatic after SVANidhi repayment",
+      "deadline": "Ongoing",
+      "isPopular": false
+    },
+    {
+      "id": "pm-matsya-sampada",
+      "name": "PM Matsya Sampada Yojana (PMMSY)",
+      "ministry": "Ministry of Fisheries",
+      "category": "agriculture",
+      "benefit": "Subsidy up to 60% for fish farming, aquaculture, and fisheries infrastructure",
+      "benefitAmount": 0,
+      "benefitType": "subsidy",
+      "description": "Sustainable development of fisheries sector. Financial assistance for fish farmers, fishermen, and fish workers.",
+      "eligibility": {
+        "occupation": [
+          "fisherman",
+          "farmer",
+          "self_employed"
+        ],
+        "maxIncome": null,
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "all",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all"
+      },
+      "documents": [
+        "Aadhaar Card",
+        "Bank Account",
+        "Fish Farming Plan",
+        "Land/Water Body Proof"
+      ],
+      "applyLink": "https://dof.gov.in",
+      "howToApply": "Through District Fisheries Officer or online",
+      "deadline": "March 2026",
+      "isPopular": false
+    },
+    {
+      "id": "interest-subvention-crop",
+      "name": "Interest Subvention Scheme for Crop Loans",
+      "ministry": "Ministry of Agriculture",
+      "category": "agriculture",
+      "benefit": "Crop loan at 4% interest (instead of 7%) for up to ₹3 lakh",
+      "benefitAmount": 0,
+      "benefitType": "subsidy",
+      "description": "Government provides interest subvention to banks so farmers get short-term crop loans at subsidized rates.",
+      "eligibility": {
+        "occupation": [
+          "farmer"
+        ],
+        "maxIncome": null,
+        "minAge": 18,
+        "maxAge": 75,
+        "gender": "all",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all",
+        "hasLand": true
+      },
+      "documents": [
+        "Aadhaar Card",
+        "Land Records",
+        "Bank Account",
+        "KCC"
+      ],
+      "applyLink": "https://www.nabard.org",
+      "howToApply": "Through any commercial/cooperative bank",
+      "deadline": "Ongoing",
+      "isPopular": false
+    },
+    {
+      "id": "national-safai-karamchari",
+      "name": "National Safai Karamchari Finance & Development Corp (NSKFDC)",
+      "ministry": "Ministry of Social Justice",
+      "category": "business",
+      "benefit": "Loans up to ₹15,00,000 at 4% interest for sanitation workers and their families",
+      "benefitAmount": 1500000,
+      "benefitType": "loan",
+      "description": "Financial assistance for rehabilitation of safai karamcharis and manual scavengers through self-employment loans.",
+      "eligibility": {
+        "occupation": [
+          "daily_wage",
+          "self_employed"
+        ],
+        "maxIncome": null,
+        "minAge": 18,
+        "maxAge": 55,
+        "gender": "all",
+        "category": [
+          "sc",
+          "st"
+        ],
+        "states": "all"
+      },
+      "documents": [
+        "Aadhaar Card",
+        "Caste Certificate",
+        "Bank Account",
+        "Occupation Certificate"
+      ],
+      "applyLink": "https://nskfdc.gov.in",
+      "howToApply": "Through District Social Welfare Officer",
+      "deadline": "Ongoing",
+      "isPopular": false
+    },
+    {
+      "id": "pm-usha",
+      "name": "PM USHA (Upgradation of State Health Systems)",
+      "ministry": "Ministry of Health",
+      "category": "health",
+      "benefit": "Free healthcare at upgraded district hospitals and medical colleges",
+      "benefitAmount": 0,
+      "benefitType": "service",
+      "description": "Upgrades district hospitals to super-specialty facilities and establishes new medical colleges in underserved districts.",
+      "eligibility": {
+        "occupation": [
+          "all"
+        ],
+        "maxIncome": null,
+        "minAge": 0,
+        "maxAge": null,
+        "gender": "all",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all"
+      },
+      "documents": [
+        "Aadhaar Card"
+      ],
+      "applyLink": "https://nhm.gov.in",
+      "howToApply": "No application needed — use services at upgraded hospitals",
+      "deadline": "Ongoing",
+      "isPopular": false
+    },
+    {
+      "id": "kanya-shiksha-pravesh",
+      "name": "Kanya Shiksha Pravesh Utsav",
+      "ministry": "Ministry of Education",
+      "category": "education",
+      "benefit": "Bringing out-of-school girls back to education — enrollment drive + support",
+      "benefitAmount": 0,
+      "benefitType": "education",
+      "description": "Special drive to enroll out-of-school girls aged 11-14 back into formal education system with community support.",
+      "eligibility": {
+        "occupation": [
+          "student"
+        ],
+        "maxIncome": null,
+        "minAge": 11,
+        "maxAge": 14,
+        "gender": "female",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all",
+        "isGirlChild": true
+      },
+      "documents": [
+        "Aadhaar Card",
+        "Age Proof"
+      ],
+      "applyLink": "https://education.gov.in",
+      "howToApply": "Through local education authorities or Anganwadi workers",
+      "deadline": "Ongoing",
+      "isPopular": false
+    },
+    {
+      "id": "pm-daksh-portal",
+      "name": "PM-DAKSH Portal (Skill Training for SC/OBC/EWS)",
+      "ministry": "Ministry of Social Justice",
+      "category": "employment",
+      "benefit": "Free skill training + ₹5,000 stipend + certification + placement",
+      "benefitAmount": 5000,
+      "benefitType": "training",
+      "description": "Online portal for skill development training of SC, OBC, EWS, and DNT persons in agriculture, construction, IT, and more.",
+      "eligibility": {
+        "occupation": [
+          "unemployed",
+          "daily_wage",
+          "agricultural_worker"
+        ],
+        "maxIncome": 300000,
+        "minAge": 18,
+        "maxAge": 45,
+        "gender": "all",
+        "category": [
+          "sc",
+          "obc",
+          "ews"
+        ],
+        "states": "all"
+      },
+      "documents": [
+        "Aadhaar Card",
+        "Caste Certificate",
+        "Income Certificate",
+        "Bank Account"
+      ],
+      "applyLink": "https://www.pmdakshportal.dosje.gov.in",
+      "howToApply": "Register on portal",
+      "deadline": "Ongoing",
+      "isPopular": false
+    },
+    {
+      "id": "national-schedule-tribe-finance",
+      "name": "National ST Finance & Development Corp (NSFDC)",
+      "ministry": "Ministry of Tribal Affairs",
+      "category": "business",
+      "benefit": "Loans at 4-6% interest for ST persons — up to ₹15,00,000",
+      "benefitAmount": 1500000,
+      "benefitType": "loan",
+      "description": "Financial assistance for economic development of Scheduled Tribes through self-employment and skill training loans.",
+      "eligibility": {
+        "occupation": [
+          "self_employed",
+          "unemployed",
+          "daily_wage"
+        ],
+        "maxIncome": null,
+        "minAge": 18,
+        "maxAge": 55,
+        "gender": "all",
+        "category": [
+          "st"
+        ],
+        "states": "all"
+      },
+      "documents": [
+        "Aadhaar Card",
+        "ST Certificate",
+        "Bank Account",
+        "Income Certificate"
+      ],
+      "applyLink": "https://nsfdc.nic.in",
+      "howToApply": "Through District Tribal Development Officer",
+      "deadline": "Ongoing",
+      "isPopular": false
+    },
+    {
+      "id": "national-sc-finance",
+      "name": "National SC Finance & Development Corp (NSCFDC)",
+      "ministry": "Ministry of Social Justice",
+      "category": "business",
+      "benefit": "Loans at 4-6% interest for SC persons — up to ₹15,00,000",
+      "benefitAmount": 1500000,
+      "benefitType": "loan",
+      "description": "Financial assistance for economic development of Scheduled Castes through self-employment and education loans.",
+      "eligibility": {
+        "occupation": [
+          "self_employed",
+          "unemployed",
+          "daily_wage"
+        ],
+        "maxIncome": null,
+        "minAge": 18,
+        "maxAge": 55,
+        "gender": "all",
+        "category": [
+          "sc"
+        ],
+        "states": "all"
+      },
+      "documents": [
+        "Aadhaar Card",
+        "SC Certificate",
+        "Bank Account",
+        "Income Certificate"
+      ],
+      "applyLink": "https://nscfdc.nic.in",
+      "howToApply": "Through District Social Welfare Officer",
+      "deadline": "Ongoing",
+      "isPopular": false
+    },
+    {
+      "id": "pm-kisan-sampada",
+      "name": "PM Kisan Sampada Yojana",
+      "ministry": "Ministry of Food Processing",
+      "category": "agriculture",
+      "benefit": "Subsidy for food processing units — 35-75% capital subsidy",
+      "benefitAmount": 0,
+      "benefitType": "subsidy",
+      "description": "Scheme for creation of food processing infrastructure including mega food parks, cold chains, and processing units.",
+      "eligibility": {
+        "occupation": [
+          "farmer",
+          "business_owner",
+          "self_employed"
+        ],
+        "maxIncome": null,
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "all",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all"
+      },
+      "documents": [
+        "Aadhaar Card",
+        "Business Registration",
+        "Project Report",
+        "Bank Account"
+      ],
+      "applyLink": "https://mofpi.gov.in",
+      "howToApply": "Apply online at MOFPI portal",
+      "deadline": "Ongoing",
+      "isPopular": false
+    },
+    {
+      "id": "swadhar-greh",
+      "name": "Swadhar Greh Scheme",
+      "ministry": "Ministry of Women & Child Development",
+      "category": "welfare",
+      "benefit": "Shelter, food, and rehabilitation for women in difficult circumstances",
+      "benefitAmount": 0,
+      "benefitType": "service",
+      "description": "Provides shelter, food, clothing, medical care, and rehabilitation to women in distress including destitute, deserted, and trafficked women.",
+      "eligibility": {
+        "occupation": [
+          "all"
+        ],
+        "maxIncome": null,
+        "minAge": 18,
+        "maxAge": 60,
+        "gender": "female",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all"
+      },
+      "documents": [
+        "Aadhaar Card",
+        "Referral from police/NGO/court"
+      ],
+      "applyLink": "https://wcd.nic.in",
+      "howToApply": "Contact nearest Swadhar Greh or Women Helpline 181",
+      "deadline": "Ongoing",
+      "isPopular": false
+    },
+    {
+      "id": "working-women-hostel",
+      "name": "Working Women Hostel Scheme",
+      "ministry": "Ministry of Women & Child Development",
+      "category": "welfare",
+      "benefit": "Safe hostel accommodation for working women at subsidized rates",
+      "benefitAmount": 0,
+      "benefitType": "service",
+      "description": "Provides safe and affordable hostel accommodation to working women away from their hometown.",
+      "eligibility": {
+        "occupation": [
+          "salaried",
+          "self_employed",
+          "student"
+        ],
+        "maxIncome": null,
+        "minAge": 18,
+        "maxAge": 55,
+        "gender": "female",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all"
+      },
+      "documents": [
+        "Aadhaar Card",
+        "Employment/Student ID",
+        "Income Certificate"
+      ],
+      "applyLink": "https://wcd.nic.in",
+      "howToApply": "Apply to nearest Working Women Hostel",
+      "deadline": "Ongoing",
+      "isPopular": false
     }
   ],
   "categories": [
@@ -1824,7 +2626,7 @@
     }
   ],
   "meta": {
-    "totalSchemes": 45,
+    "totalSchemes": 67,
     "lastUpdated": "2026-04-23",
     "source": "myscheme.gov.in, pib.gov.in, ministry websites"
   }
