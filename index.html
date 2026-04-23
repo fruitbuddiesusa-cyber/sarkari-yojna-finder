@@ -5,56 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Find Government Schemes You're Eligible For | Free Check</title>
   <meta name="description" content="Discover government schemes you qualify for. Enter your details and find PM-Kisan, Ayushman Bharat, PM Awas, and 30+ schemes with direct apply links.">
-  <meta name="keywords" content="government scheme, sarkari yojana, PM Kisan, Ayushman Bharat, PM Awas, Mudra loan, eligibility check, government benefits India">
+  <meta name="keywords" content="government scheme, sarkari yojana, PM Kisan, Ayushman Bharat, PM Awas, Mudra loan, eligibility check, government benefits India, सरकारी योजना">
   <meta name="robots" content="index, follow">
-  <meta name="author" content="Sarkari Yojna Finder">
-
-  <!-- Open Graph -->
   <meta property="og:title" content="Find Government Schemes You're Eligible For">
   <meta property="og:description" content="Check eligibility for 30+ government schemes in 30 seconds. Free.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://yourdomain.com">
-  <meta property="og:image" content="https://yourdomain.com/assets/og-image.png">
-
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Find Government Schemes You're Eligible For">
-  <meta name="twitter:description" content="Check eligibility for 30+ government schemes in 30 seconds.">
-
-  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏛️</text></svg>">
-
-  <!-- Canonical -->
   <link rel="canonical" href="https://yourdomain.com">
-
-  <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": "Government Scheme Finder",
-    "description": "Find government schemes you're eligible for based on your profile",
+    "description": "Find government schemes you're eligible for",
     "applicationCategory": "UtilityApplication",
-    "operatingSystem": "Web",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "INR"
-    }
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
   }
   </script>
-
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/flip.css">
 </head>
 <body>
-  <!-- Cookie Consent Banner -->
+  <!-- Cookie Consent -->
   <div id="cookie-banner" class="cookie-banner" style="display:none;">
     <div class="cookie-content">
-      <p>🍪 We use cookies to improve your experience and analyze site traffic. By continuing, you agree to our use of cookies.</p>
+      <p data-i18n="cookieText">🍪 We use cookies to improve your experience.</p>
       <div class="cookie-buttons">
-        <button id="cookie-accept" class="btn btn-primary btn-sm">Accept All</button>
-        <button id="cookie-reject" class="btn btn-outline btn-sm">Reject Non-Essential</button>
-        <a href="#privacy" class="cookie-link">Privacy Policy</a>
+        <button id="cookie-accept" class="btn btn-primary btn-sm" data-i18n="cookieAccept">Accept All</button>
+        <button id="cookie-reject" class="btn btn-outline btn-sm" data-i18n="cookieReject">Reject Non-Essential</button>
+        <a href="#privacy" class="cookie-link" data-i18n="cookiePolicy">Privacy Policy</a>
       </div>
     </div>
   </div>
@@ -65,43 +46,47 @@
       <div class="header-inner">
         <div class="logo">
           <span class="logo-icon">🏛️</span>
-          <span class="logo-text">SchemeFinder<span class="logo-dot">.in</span></span>
+          <span class="logo-text"><span data-i18n="logo">SchemeFinder</span><span class="logo-dot" data-i18n="logoDot">.in</span></span>
         </div>
         <nav class="nav">
-          <a href="#how-it-works">How It Works</a>
-          <a href="#schemes">Schemes</a>
-          <a href="#faq">FAQ</a>
+          <a href="#how-it-works" data-i18n="navHowItWorks">How It Works</a>
+          <a href="#schemes" data-i18n="navSchemes">Schemes</a>
+          <a href="#faq" data-i18n="navFaq">FAQ</a>
+          <div class="lang-switcher">
+            <button class="lang-btn" onclick="LangManager.switchLang('en')" id="lang-en">EN</button>
+            <button class="lang-btn" onclick="LangManager.switchLang('hi')" id="lang-hi">हिं</button>
+          </div>
         </nav>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
     <div class="container">
       <div class="hero-content">
-        <div class="hero-badge">🇮🇳 Free Government Scheme Checker</div>
+        <div class="hero-badge" data-i18n="heroBadge">🇮🇳 Free Government Scheme Checker</div>
         <h1 class="hero-title">
-          You might be missing
-          <span class="hero-highlight">₹2,50,000+</span>
-          in government benefits
+          <span data-i18n="heroTitle1">You might be missing</span>
+          <span class="hero-highlight" data-i18n="heroHighlight">₹2,50,000+</span>
+          <span data-i18n="heroTitle2">in government benefits</span>
         </h1>
         <p class="hero-subtitle">
-          Enter your details below. We'll check 30+ government schemes you may qualify for.
-          <strong>100% free to check.</strong>
+          <span data-i18n="heroSubtitle">Enter your details below. We'll check 30+ government schemes you may qualify for.</span>
+          <strong data-i18n="heroFree">100% free to check.</strong>
         </p>
         <div class="hero-stats">
           <div class="stat">
             <span class="stat-number" id="visitor-count">4,832</span>
-            <span class="stat-label">people checked today</span>
+            <span class="stat-label" data-i18n="statPeople">people checked today</span>
           </div>
           <div class="stat">
             <span class="stat-number">30+</span>
-            <span class="stat-label">schemes tracked</span>
+            <span class="stat-label" data-i18n="statSchemes">schemes tracked</span>
           </div>
           <div class="stat">
             <span class="stat-number">₹5L+</span>
-            <span class="stat-label">max benefit found</span>
+            <span class="stat-label" data-i18n="statMax">max benefit found</span>
           </div>
         </div>
       </div>
@@ -112,33 +97,28 @@
   <section class="search-section" id="check">
     <div class="container">
       <div class="search-card">
-        <h2 class="search-title">Check Your Eligibility</h2>
-        <p class="search-subtitle">Fill in your details — takes less than 30 seconds</p>
+        <h2 class="search-title" data-i18n="formTitle">Check Your Eligibility</h2>
+        <p class="search-subtitle" data-i18n="formSubtitle">Fill in your details — takes less than 30 seconds</p>
 
         <form id="eligibility-form" class="form" autocomplete="off">
           <div class="form-grid">
-            <!-- Age -->
             <div class="form-group">
-              <label for="age">Your Age</label>
-              <input type="number" id="age" name="age" min="0" max="120" placeholder="e.g., 28" required>
+              <label for="age" data-i18n="labelAge">Your Age</label>
+              <input type="number" id="age" name="age" min="0" max="120" data-i18n-placeholder="placeholderAge" placeholder="e.g., 28" required>
             </div>
-
-            <!-- Gender -->
             <div class="form-group">
-              <label for="gender">Gender</label>
+              <label for="gender" data-i18n="labelGender">Gender</label>
               <select id="gender" name="gender" required>
-                <option value="">Select</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
+                <option value="" data-i18n="selectGender">Select</option>
+                <option value="male" data-i18n="male">Male</option>
+                <option value="female" data-i18n="female">Female</option>
+                <option value="other" data-i18n="other">Other</option>
               </select>
             </div>
-
-            <!-- State -->
             <div class="form-group">
-              <label for="state">State / UT</label>
+              <label for="state" data-i18n="labelState">State / UT</label>
               <select id="state" name="state" required>
-                <option value="">Select State</option>
+                <option value="" data-i18n="selectState">Select State</option>
                 <option value="andhra-pradesh">Andhra Pradesh</option>
                 <option value="arunachal-pradesh">Arunachal Pradesh</option>
                 <option value="assam">Assam</option>
@@ -174,12 +154,10 @@
                 <option value="puducherry">Puducherry</option>
               </select>
             </div>
-
-            <!-- Annual Income -->
             <div class="form-group">
-              <label for="income">Annual Family Income (₹)</label>
+              <label for="income" data-i18n="labelIncome">Annual Family Income (₹)</label>
               <select id="income" name="income" required>
-                <option value="">Select Range</option>
+                <option value="" data-i18n="selectIncome">Select Range</option>
                 <option value="0">Below ₹50,000</option>
                 <option value="50000">₹50,000 - ₹1,00,000</option>
                 <option value="100000">₹1,00,000 - ₹2,00,000</option>
@@ -192,127 +170,113 @@
                 <option value="1800000">Above ₹18,00,000</option>
               </select>
             </div>
-
-            <!-- Occupation -->
             <div class="form-group">
-              <label for="occupation">Occupation</label>
+              <label for="occupation" data-i18n="labelOccupation">Occupation</label>
               <select id="occupation" name="occupation" required>
-                <option value="">Select</option>
-                <option value="farmer">Farmer</option>
-                <option value="agricultural_worker">Agricultural Worker</option>
-                <option value="salaried">Salaried / Job</option>
-                <option value="business_owner">Business Owner</option>
-                <option value="self_employed">Self Employed</option>
-                <option value="freelancer">Freelancer / Gig Worker</option>
-                <option value="student">Student</option>
-                <option value="unemployed">Unemployed</option>
-                <option value="daily_wage">Daily Wage Worker</option>
-                <option value="street_vendor">Street Vendor</option>
-                <option value="homemaker">Homemaker</option>
-                <option value="retired">Retired</option>
+                <option value="" data-i18n="selectOccupation">Select</option>
+                <option value="farmer" data-i18n="occ_farmer">Farmer</option>
+                <option value="agricultural_worker" data-i18n="occ_agricultural_worker">Agricultural Worker</option>
+                <option value="salaried" data-i18n="occ_salaried">Salaried / Job</option>
+                <option value="business_owner" data-i18n="occ_business_owner">Business Owner</option>
+                <option value="self_employed" data-i18n="occ_self_employed">Self Employed</option>
+                <option value="freelancer" data-i18n="occ_freelancer">Freelancer / Gig Worker</option>
+                <option value="student" data-i18n="occ_student">Student</option>
+                <option value="unemployed" data-i18n="occ_unemployed">Unemployed</option>
+                <option value="daily_wage" data-i18n="occ_daily_wage">Daily Wage Worker</option>
+                <option value="street_vendor" data-i18n="occ_street_vendor">Street Vendor</option>
+                <option value="homemaker" data-i18n="occ_homemaker">Homemaker</option>
+                <option value="retired" data-i18n="occ_retired">Retired</option>
               </select>
             </div>
-
-            <!-- Category -->
             <div class="form-group">
-              <label for="category">Category</label>
+              <label for="category" data-i18n="labelCategory">Category</label>
               <select id="category" name="category" required>
-                <option value="">Select</option>
-                <option value="general">General</option>
-                <option value="obc">OBC</option>
-                <option value="sc">SC</option>
-                <option value="st">ST</option>
-                <option value="ews">EWS</option>
+                <option value="" data-i18n="selectCategory">Select</option>
+                <option value="general" data-i18n="cat_general">General</option>
+                <option value="obc" data-i18n="cat_obc">OBC</option>
+                <option value="sc" data-i18n="cat_sc">SC</option>
+                <option value="st" data-i18n="cat_st">ST</option>
+                <option value="ews" data-i18n="cat_ews">EWS</option>
               </select>
             </div>
           </div>
 
-          <!-- Additional Questions -->
           <div class="form-extras">
-            <h3>A few more questions (helps find more schemes)</h3>
+            <h3 data-i18n="extrasTitle">A few more questions (helps find more schemes)</h3>
             <div class="form-checks">
               <label class="checkbox-label">
                 <input type="checkbox" id="isStudent" name="isStudent">
-                <span class="checkmark"></span>
-                I am a student
+                <span data-i18n="checkStudent">I am a student</span>
               </label>
               <label class="checkbox-label">
                 <input type="checkbox" id="hasLand" name="hasLand">
-                <span class="checkmark"></span>
-                I own agricultural land
+                <span data-i18n="checkLand">I own agricultural land</span>
               </label>
               <label class="checkbox-label">
                 <input type="checkbox" id="hasHouse" name="hasHouse">
-                <span class="checkmark"></span>
-                I own a house (pucca)
+                <span data-i18n="checkHouse">I own a house (pucca)</span>
               </label>
               <label class="checkbox-label">
                 <input type="checkbox" id="isRural" name="isRural">
-                <span class="checkmark"></span>
-                I live in a rural area
+                <span data-i18n="checkRural">I live in a rural area</span>
               </label>
               <label class="checkbox-label">
                 <input type="checkbox" id="hasRationCard" name="hasRationCard">
-                <span class="checkmark"></span>
-                I have a ration card
+                <span data-i18n="checkRation">I have a ration card</span>
               </label>
             </div>
           </div>
 
           <button type="submit" class="btn btn-primary btn-lg btn-block" id="search-btn">
-            <span class="btn-text">🔍 Find My Schemes</span>
-            <span class="btn-loading" style="display:none;">Searching...</span>
+            <span class="btn-text" data-i18n="btnSearch">🔍 Find My Schemes</span>
+            <span class="btn-loading" style="display:none;" data-i18n="btnSearching">Searching...</span>
           </button>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- Results Section (Hidden initially) -->
+  <!-- Results -->
   <section class="results-section" id="results" style="display:none;">
     <div class="container">
       <div class="results-header">
-        <h2 class="results-title" id="results-title">We found <span id="scheme-count">0</span> schemes for you!</h2>
+        <h2 class="results-title" id="results-title"></h2>
         <p class="results-subtitle" id="results-subtitle"></p>
         <div class="results-total" id="results-total"></div>
       </div>
-
-      <div class="results-grid" id="results-grid">
-        <!-- Cards injected by JS -->
-      </div>
+      <div class="results-grid" id="results-grid"></div>
 
       <!-- Paywall -->
       <div class="paywall" id="paywall">
         <div class="paywall-card">
           <div class="paywall-icon">🔒</div>
-          <h3>Unlock All Your Eligible Schemes</h3>
-          <p>See full details, documents needed, and direct apply links for all matched schemes.</p>
+          <h3 data-i18n="paywallTitle">Unlock All Your Eligible Schemes</h3>
+          <p data-i18n="paywallDesc">See full details, documents needed, and direct apply links for all matched schemes.</p>
           <div class="paywall-price">
-            <span class="price-original">₹499</span>
-            <span class="price-now">₹99</span>
-            <span class="price-note">one-time • lifetime access</span>
+            <span class="price-original" data-i18n="paywallOriginal">₹499</span>
+            <span class="price-now" data-i18n="paywallNow">₹99</span>
+            <span class="price-note" data-i18n="paywallNote">one-time • lifetime access</span>
           </div>
           <div class="paywall-features">
-            <div class="feature">✅ Full scheme details</div>
-            <div class="feature">✅ Documents checklist</div>
-            <div class="feature">✅ Direct apply links</div>
-            <div class="feature">✅ Eligibility confirmation</div>
-            <div class="feature">✅ Future scheme updates</div>
+            <div class="feature" data-i18n="feature1">✅ Full scheme details</div>
+            <div class="feature" data-i18n="feature2">✅ Documents checklist</div>
+            <div class="feature" data-i18n="feature3">✅ Direct apply links</div>
+            <div class="feature" data-i18n="feature4">✅ Eligibility confirmation</div>
+            <div class="feature" data-i18n="feature5">✅ Future scheme updates</div>
           </div>
           <button class="btn btn-primary btn-lg btn-block" id="pay-btn" onclick="initPayment()">
-            🔓 Unlock Now — ₹99
+            <span data-i18n="btnUnlock">🔓 Unlock Now — ₹99</span>
           </button>
           <div class="paywall-trust">
-            <span>🔒 Secure payment via Razorpay</span>
-            <span>💳 UPI / Cards / Net Banking</span>
+            <span data-i18n="paywallSecure">🔒 Secure payment via Razorpay</span>
+            <span data-i18n="paywallMethods">💳 UPI / Cards / Net Banking</span>
           </div>
         </div>
       </div>
 
-      <!-- CTA for non-matched -->
       <div class="no-results" id="no-results" style="display:none;">
-        <h3>No schemes matched your profile</h3>
-        <p>This could mean your income/occupation doesn't currently qualify for tracked schemes. Try adjusting your details or check back later as new schemes are added.</p>
+        <h3 data-i18n="noResults">No schemes matched your profile</h3>
+        <p data-i18n="noResultsDesc">Try adjusting your details or check back later.</p>
       </div>
     </div>
   </section>
@@ -320,31 +284,31 @@
   <!-- How It Works -->
   <section class="how-section" id="how-it-works">
     <div class="container">
-      <h2 class="section-title">How It Works</h2>
+      <h2 class="section-title" data-i18n="howTitle">How It Works</h2>
       <div class="steps">
         <div class="step">
           <div class="step-number">1</div>
           <div class="step-icon">📝</div>
-          <h3>Enter Details</h3>
-          <p>Fill in your age, income, occupation, and other basic details. Takes 30 seconds.</p>
+          <h3 data-i18n="step1Title">Enter Details</h3>
+          <p data-i18n="step1Desc">Fill in your age, income, occupation, and other basic details. Takes 30 seconds.</p>
         </div>
         <div class="step">
           <div class="step-number">2</div>
           <div class="step-icon">🔍</div>
-          <h3>We Match</h3>
-          <p>Our engine checks your profile against 30+ government schemes instantly.</p>
+          <h3 data-i18n="step2Title">We Match</h3>
+          <p data-i18n="step2Desc">Our engine checks your profile against 30+ government schemes instantly.</p>
         </div>
         <div class="step">
           <div class="step-number">3</div>
           <div class="step-icon">📋</div>
-          <h3>Get Results</h3>
-          <p>See all schemes you qualify for with benefits, documents needed, and apply links.</p>
+          <h3 data-i18n="step3Title">Get Results</h3>
+          <p data-i18n="step3Desc">See all schemes you qualify for with benefits, documents needed, and apply links.</p>
         </div>
         <div class="step">
           <div class="step-number">4</div>
           <div class="step-icon">✅</div>
-          <h3>Apply</h3>
-          <p>Click the apply link and follow the instructions. Most applications are online now.</p>
+          <h3 data-i18n="step4Title">Apply</h3>
+          <p data-i18n="step4Desc">Click the apply link and follow the instructions. Most applications are online now.</p>
         </div>
       </div>
     </div>
@@ -353,57 +317,34 @@
   <!-- Popular Schemes -->
   <section class="schemes-section" id="schemes">
     <div class="container">
-      <h2 class="section-title">Popular Government Schemes</h2>
-      <p class="section-subtitle">Some of the most impactful schemes available right now</p>
-      <div class="schemes-grid" id="schemes-preview">
-        <!-- Injected by JS -->
-      </div>
+      <h2 class="section-title" data-i18n="schemesTitle">Popular Government Schemes</h2>
+      <p class="section-subtitle" data-i18n="schemesSubtitle">Some of the most impactful schemes available right now</p>
+      <div class="schemes-grid" id="schemes-preview"></div>
     </div>
   </section>
 
   <!-- FAQ -->
   <section class="faq-section" id="faq">
     <div class="container">
-      <h2 class="section-title">Frequently Asked Questions</h2>
+      <h2 class="section-title" data-i18n="faqTitle">Frequently Asked Questions</h2>
       <div class="faq-list">
-        <details class="faq-item">
-          <summary>Is this free to use?</summary>
-          <p>Checking your eligibility is 100% free. You can see how many schemes you match and the first scheme details for free. To unlock all scheme details, documents needed, and direct apply links, there's a one-time fee of ₹99.</p>
-        </details>
-        <details class="faq-item">
-          <summary>How accurate is the eligibility check?</summary>
-          <p>We use official eligibility criteria from government sources. However, final eligibility is determined by the implementing authority. Our tool gives you a strong indication of what you may qualify for.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Is my data safe?</summary>
-          <p>Yes. We don't store your personal details on our servers. All matching happens in your browser. We only use anonymous analytics to improve our service.</p>
-        </details>
-        <details class="faq-item">
-          <summary>How often is the data updated?</summary>
-          <p>We update our scheme database regularly as new schemes are announced or eligibility criteria change. Last updated: April 2026.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Can I check for my family members?</summary>
-          <p>Absolutely! You can run multiple checks with different profiles. Many users check for their parents, spouse, and children.</p>
-        </details>
-        <details class="faq-item">
-          <summary>What payment methods do you accept?</summary>
-          <p>We accept UPI (Google Pay, PhonePe, Paytm), all major debit/credit cards, and net banking through Razorpay.</p>
-        </details>
-        <details class="faq-item">
-          <summary>What if I'm not eligible for any scheme?</summary>
-          <p>If no schemes match your profile, it likely means your income/occupation doesn't currently qualify for the schemes we track. New schemes are added regularly, so check back later.</p>
-        </details>
+        <details class="faq-item"><summary data-i18n="faq1q">Is this free to use?</summary><p data-i18n="faq1a">Checking eligibility is 100% free.</p></details>
+        <details class="faq-item"><summary data-i18n="faq2q">How accurate is the eligibility check?</summary><p data-i18n="faq2a">We use official eligibility criteria from government sources.</p></details>
+        <details class="faq-item"><summary data-i18n="faq3q">Is my data safe?</summary><p data-i18n="faq3a">Yes. We don't store your personal details on our servers.</p></details>
+        <details class="faq-item"><summary data-i18n="faq4q">How often is the data updated?</summary><p data-i18n="faq4a">We update our scheme database regularly.</p></details>
+        <details class="faq-item"><summary data-i18n="faq5q">Can I check for my family members?</summary><p data-i18n="faq5a">Absolutely! You can run multiple checks.</p></details>
+        <details class="faq-item"><summary data-i18n="faq6q">What payment methods do you accept?</summary><p data-i18n="faq6a">We accept UPI, all major cards, and net banking.</p></details>
+        <details class="faq-item"><summary data-i18n="faq7q">What if I'm not eligible for any scheme?</summary><p data-i18n="faq7a">Try adjusting your details or check back later.</p></details>
       </div>
     </div>
   </section>
 
-  <!-- CTA Section -->
+  <!-- CTA -->
   <section class="cta-section">
     <div class="container">
-      <h2>Don't miss out on benefits you deserve</h2>
-      <p>Millions of Indians leave government benefits unclaimed simply because they don't know they're eligible.</p>
-      <a href="#check" class="btn btn-primary btn-lg">Check Your Eligibility Now — Free</a>
+      <h2 data-i18n="ctaTitle">Don't miss out on benefits you deserve</h2>
+      <p data-i18n="ctaDesc">Millions of Indians leave government benefits unclaimed.</p>
+      <a href="#check" class="btn btn-primary btn-lg" data-i18n="ctaBtn">Check Your Eligibility Now — Free</a>
     </div>
   </section>
 
@@ -414,72 +355,49 @@
         <div class="footer-brand">
           <span class="logo-icon">🏛️</span>
           <span class="logo-text">SchemeFinder<span class="logo-dot">.in</span></span>
-          <p>Helping Indians discover government benefits they're entitled to.</p>
+          <p data-i18n="footerDesc">Helping Indians discover government benefits they're entitled to.</p>
         </div>
         <div class="footer-links">
-          <h4>Quick Links</h4>
+          <h4 data-i18n="footerQuickLinks">Quick Links</h4>
           <a href="#check">Check Eligibility</a>
           <a href="#schemes">Browse Schemes</a>
           <a href="#faq">FAQ</a>
-          <a href="#privacy">Privacy Policy</a>
-          <a href="#terms">Terms of Service</a>
-          <a href="#contact">Contact Us</a>
         </div>
         <div class="footer-links">
-          <h4>Popular Schemes</h4>
-          <a href="#" onclick="scrollToSection('check')">PM-Kisan</a>
-          <a href="#" onclick="scrollToSection('check')">Ayushman Bharat</a>
-          <a href="#" onclick="scrollToSection('check')">PM Awas Yojana</a>
-          <a href="#" onclick="scrollToSection('check')">Mudra Loan</a>
-          <a href="#" onclick="scrollToSection('check')">Atal Pension</a>
+          <h4 data-i18n="footerPopular">Popular Schemes</h4>
+          <a href="#check">PM-Kisan</a>
+          <a href="#check">Ayushman Bharat</a>
+          <a href="#check">PM Awas Yojana</a>
+          <a href="#check">Mudra Loan</a>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 SchemeFinder.in — Not affiliated with any government body. Data sourced from official government portals.</p>
-        <p class="footer-disclaimer">Disclaimer: This tool provides indicative eligibility information. Final decisions rest with the implementing authority.</p>
+        <p>© 2026 SchemeFinder.in — Not affiliated with any government body.</p>
+        <p class="footer-disclaimer" data-i18n="footerDisclaimer">Disclaimer: This tool provides indicative eligibility information.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Privacy Policy Modal -->
+  <!-- Privacy Modal -->
   <div id="privacy" class="modal" style="display:none;">
     <div class="modal-content">
       <a href="#" class="modal-close">&times;</a>
       <h2>Privacy Policy</h2>
       <div class="modal-body">
         <h3>Data Collection</h3>
-        <p>We do not store your personal details (age, income, occupation, etc.) on our servers. All eligibility matching happens locally in your browser.</p>
+        <p>We do not store your personal details on our servers. All eligibility matching happens locally in your browser.</p>
         <h3>Cookies</h3>
-        <p>We use essential cookies for site functionality and optional analytics cookies to understand how visitors use our site. You can opt out of non-essential cookies.</p>
+        <p>We use essential cookies for site functionality and optional analytics cookies. You can opt out of non-essential cookies.</p>
         <h3>Third-Party Services</h3>
-        <p>We use Razorpay for payment processing. Your payment details are handled by Razorpay and are not stored by us. We use Google Analytics for anonymous traffic analysis.</p>
-        <h3>Data Sharing</h3>
-        <p>We do not sell, trade, or share your personal information with any third party.</p>
+        <p>We use Razorpay for payment processing. Your payment details are handled by Razorpay and are not stored by us.</p>
         <h3>Contact</h3>
         <p>For privacy concerns, email: privacy@yourdomain.com</p>
       </div>
     </div>
   </div>
 
-  <!-- Terms Modal -->
-  <div id="terms" class="modal" style="display:none;">
-    <div class="modal-content">
-      <a href="#" class="modal-close">&times;</a>
-      <h2>Terms of Service</h2>
-      <div class="modal-body">
-        <h3>Service Description</h3>
-        <p>SchemeFinder.in provides indicative eligibility information for government schemes. We are not a government body and do not guarantee scheme approval.</p>
-        <h3>Payment</h3>
-        <p>The ₹99 payment provides lifetime access to scheme details for the profile you searched. Refunds are available within 24 hours if no scheme details were unlocked.</p>
-        <h3>Accuracy</h3>
-        <p>While we strive for accuracy, scheme eligibility criteria may change. Always verify with official sources before applying.</p>
-        <h3>Limitation of Liability</h3>
-        <p>We are not responsible for scheme application rejections or changes in government policy.</p>
-      </div>
-    </div>
-  </div>
-
   <!-- Scripts -->
+  <script src="js/lang.js"></script>
   <script src="js/matcher.js"></script>
   <script src="js/cookies.js"></script>
   <script src="js/app.js"></script>

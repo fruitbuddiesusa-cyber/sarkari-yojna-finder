@@ -10,17 +10,31 @@
       "benefitType": "cash",
       "description": "Direct income support to all landholding farmer families with cultivable land. The amount is transferred directly to bank accounts.",
       "eligibility": {
-        "occupation": ["farmer", "agricultural_worker"],
+        "occupation": [
+          "farmer",
+          "agricultural_worker"
+        ],
         "maxIncome": null,
         "minAge": 18,
         "maxAge": null,
         "gender": "all",
-        "category": ["general", "obc", "sc", "st", "ews"],
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": true
       },
-      "documents": ["Aadhaar Card", "Land Records (Khata/Khasra)", "Bank Account Passbook", "Mobile Number linked to Aadhaar"],
+      "documents": [
+        "Aadhaar Card",
+        "Land Records (Khata/Khasra)",
+        "Bank Account Passbook",
+        "Mobile Number linked to Aadhaar"
+      ],
       "applyLink": "https://pmkisan.gov.in",
       "howToApply": "Register online at pmkisan.gov.in or visit your nearest CSC (Common Service Centre)",
       "deadline": "Ongoing",
@@ -36,18 +50,29 @@
       "benefitType": "insurance",
       "description": "World's largest health insurance scheme providing cashless treatment at empaneled hospitals for secondary and tertiary hospitalization.",
       "eligibility": {
-        "occupation": ["all"],
+        "occupation": [
+          "all"
+        ],
         "maxIncome": 100000,
         "minAge": 0,
         "maxAge": null,
         "gender": "all",
-        "category": ["sc", "st", "ews"],
+        "category": [
+          "sc",
+          "st",
+          "ews"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": false,
         "SECC": true
       },
-      "documents": ["Aadhaar Card", "Ration Card", "SECC Verification", "Mobile Number"],
+      "documents": [
+        "Aadhaar Card",
+        "Ration Card",
+        "SECC Verification",
+        "Mobile Number"
+      ],
       "applyLink": "https://mera.pmjay.gov.in",
       "howToApply": "Check eligibility at mera.pmjay.gov.in or visit nearest empaneled hospital with Aadhaar",
       "deadline": "Ongoing",
@@ -63,18 +88,32 @@
       "benefitType": "subsidy",
       "description": "Housing for All by 2022 mission providing interest subsidy on home loans for Economically Weaker Sections (EWS), Lower Income Group (LIG), and Middle Income Group (MIG).",
       "eligibility": {
-        "occupation": ["all"],
+        "occupation": [
+          "all"
+        ],
         "maxIncome": 1800000,
         "minAge": 21,
         "maxAge": 70,
         "gender": "all",
-        "category": ["general", "obc", "sc", "st", "ews"],
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": false,
         "hasNoHouse": true
       },
-      "documents": ["Aadhaar Card", "Income Certificate", "Property Documents", "Bank Account", "Affidavit - No house ownership"],
+      "documents": [
+        "Aadhaar Card",
+        "Income Certificate",
+        "Property Documents",
+        "Bank Account",
+        "Affidavit - No house ownership"
+      ],
       "applyLink": "https://pmaymis.gov.in",
       "howToApply": "Apply online at pmaymis.gov.in or through banks/NBFCs",
       "deadline": "December 2025",
@@ -90,19 +129,32 @@
       "benefitType": "grant",
       "description": "Financial assistance to rural BPL families for construction of pucca house with basic amenities.",
       "eligibility": {
-        "occupation": ["all"],
+        "occupation": [
+          "all"
+        ],
         "maxIncome": null,
         "minAge": 18,
         "maxAge": null,
         "gender": "all",
-        "category": ["sc", "st", "ews", "obc"],
+        "category": [
+          "sc",
+          "st",
+          "ews",
+          "obc"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": true,
         "hasNoHouse": true,
         "isRural": true
       },
-      "documents": ["Aadhaar Card", "BPL Certificate", "Land Documents", "Bank Account", "MGNREGA Job Card (if applicable)"],
+      "documents": [
+        "Aadhaar Card",
+        "BPL Certificate",
+        "Land Documents",
+        "Bank Account",
+        "MGNREGA Job Card (if applicable)"
+      ],
       "applyLink": "https://rhreporting.nic.in",
       "howToApply": "Apply through Gram Panchayat or Block Development Office",
       "deadline": "March 2026",
@@ -118,17 +170,34 @@
       "benefitType": "loan",
       "description": "Micro-finance loans for non-farm, non-corporate small and micro enterprises. No collateral required for loans up to ₹10 lakh.",
       "eligibility": {
-        "occupation": ["business_owner", "self_employed", "freelancer"],
+        "occupation": [
+          "business_owner",
+          "self_employed",
+          "freelancer"
+        ],
         "maxIncome": null,
         "minAge": 18,
         "maxAge": 65,
         "gender": "all",
-        "category": ["general", "obc", "sc", "st", "ews"],
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": false
       },
-      "documents": ["Aadhaar Card", "PAN Card", "Business Plan/Project Report", "Bank Account", "Address Proof", "Identity Proof"],
+      "documents": [
+        "Aadhaar Card",
+        "PAN Card",
+        "Business Plan/Project Report",
+        "Bank Account",
+        "Address Proof",
+        "Identity Proof"
+      ],
       "applyLink": "https://www.mudra.org.in",
       "howToApply": "Apply at any bank, NBFC, or MFI with business plan. Also available online.",
       "deadline": "Ongoing",
@@ -144,18 +213,32 @@
       "benefitType": "savings",
       "description": "Small savings scheme for girl child with highest interest rate among all small savings schemes. Triple tax benefit (EEE).",
       "eligibility": {
-        "occupation": ["all"],
+        "occupation": [
+          "all"
+        ],
         "maxIncome": null,
         "minAge": 0,
         "maxAge": 10,
         "gender": "female",
-        "category": ["general", "obc", "sc", "st", "ews"],
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
         "states": "all",
         "isStudent": true,
         "hasLand": false,
         "isGirlChild": true
       },
-      "documents": ["Girl's Birth Certificate", "Parent's Aadhaar Card", "Parent's PAN Card", "Address Proof", "Bank/Post Office Account"],
+      "documents": [
+        "Girl's Birth Certificate",
+        "Parent's Aadhaar Card",
+        "Parent's PAN Card",
+        "Address Proof",
+        "Bank/Post Office Account"
+      ],
       "applyLink": "https://www.indiapost.gov.in",
       "howToApply": "Open account at any Post Office or authorized bank branch",
       "deadline": "Girl must be under 10 years old",
@@ -171,18 +254,30 @@
       "benefitType": "pension",
       "description": "Government-backed pension scheme for workers in unorganised sector. Guaranteed minimum pension with government co-contribution.",
       "eligibility": {
-        "occupation": ["all"],
+        "occupation": [
+          "all"
+        ],
         "maxIncome": null,
         "minAge": 18,
         "maxAge": 40,
         "gender": "all",
-        "category": ["general", "obc", "sc", "st", "ews"],
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": false,
         "isGovtEmployee": false
       },
-      "documents": ["Aadhaar Card", "Bank Account", "Mobile Number"],
+      "documents": [
+        "Aadhaar Card",
+        "Bank Account",
+        "Mobile Number"
+      ],
       "applyLink": "https://www.npscra.nsdl.co.in",
       "howToApply": "Apply through your bank branch or online via net banking",
       "deadline": "Must join before age 40",
@@ -198,18 +293,30 @@
       "benefitType": "subsidy",
       "description": "Free LPG connection to women from BPL households. New connection includes deposit-free cylinder, regulator, hose, and first refill.",
       "eligibility": {
-        "occupation": ["all"],
+        "occupation": [
+          "all"
+        ],
         "maxIncome": null,
         "minAge": 18,
         "maxAge": null,
         "gender": "female",
-        "category": ["sc", "st", "ews", "obc"],
+        "category": [
+          "sc",
+          "st",
+          "ews",
+          "obc"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": false,
         "isBPL": true
       },
-      "documents": ["Aadhaar Card", "BPL Certificate/Ration Card", "Bank Account", "Address Proof"],
+      "documents": [
+        "Aadhaar Card",
+        "BPL Certificate/Ration Card",
+        "Bank Account",
+        "Address Proof"
+      ],
       "applyLink": "https://www.pmujjwalayojana.com",
       "howToApply": "Apply at nearest LPG distributor or online",
       "deadline": "Ongoing",
@@ -225,18 +332,31 @@
       "benefitType": "loan",
       "description": "Facilitates bank loans between ₹10 lakh and ₹1 crore to at least one SC/ST borrower and one woman borrower per bank branch.",
       "eligibility": {
-        "occupation": ["business_owner", "self_employed"],
+        "occupation": [
+          "business_owner",
+          "self_employed"
+        ],
         "maxIncome": null,
         "minAge": 18,
         "maxAge": null,
         "gender": "all",
-        "category": ["sc", "st"],
+        "category": [
+          "sc",
+          "st"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": false,
         "isWoman": true
       },
-      "documents": ["Aadhaar Card", "PAN Card", "Business Plan", "Caste Certificate (SC/ST)", "Bank Account", "Project Report"],
+      "documents": [
+        "Aadhaar Card",
+        "PAN Card",
+        "Business Plan",
+        "Caste Certificate (SC/ST)",
+        "Bank Account",
+        "Project Report"
+      ],
       "applyLink": "https://www.standupmitra.in",
       "howToApply": "Apply through banks or online at standupmitra.in",
       "deadline": "Ongoing",
@@ -252,18 +372,33 @@
       "benefitType": "loan",
       "description": "Special micro-credit facility for street vendors to resume their livelihoods affected by COVID-19. Collateral-free loans.",
       "eligibility": {
-        "occupation": ["street_vendor", "hawker", "small_trader"],
+        "occupation": [
+          "street_vendor",
+          "hawker",
+          "small_trader"
+        ],
         "maxIncome": null,
         "minAge": 18,
         "maxAge": null,
         "gender": "all",
-        "category": ["general", "obc", "sc", "st", "ews"],
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": false,
         "isUrban": true
       },
-      "documents": ["Aadhaar Card", "Vendor Certificate/ID", "Bank Account", "Mobile Number"],
+      "documents": [
+        "Aadhaar Card",
+        "Vendor Certificate/ID",
+        "Bank Account",
+        "Mobile Number"
+      ],
       "applyLink": "https://pmsvanidhi.mohua.gov.in",
       "howToApply": "Apply online or through ULB (Urban Local Body) / CSC",
       "deadline": "March 2026",
@@ -279,18 +414,31 @@
       "benefitType": "pension",
       "description": "Voluntary pension scheme for small and marginal farmers. Government contributes equal amount as farmer.",
       "eligibility": {
-        "occupation": ["farmer"],
+        "occupation": [
+          "farmer"
+        ],
         "maxIncome": null,
         "minAge": 18,
         "maxAge": 40,
         "gender": "all",
-        "category": ["general", "obc", "sc", "st", "ews"],
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": true,
         "maxHectares": 2
       },
-      "documents": ["Aadhaar Card", "Land Records", "Bank Account", "Mobile Number"],
+      "documents": [
+        "Aadhaar Card",
+        "Land Records",
+        "Bank Account",
+        "Mobile Number"
+      ],
       "applyLink": "https://maandhan.in",
       "howToApply": "Register at CSC (Common Service Centre) with Aadhaar and land documents",
       "deadline": "Must join before age 40",
@@ -306,17 +454,31 @@
       "benefitType": "scholarship",
       "description": "One-stop portal for various government scholarships for SC/ST/OBC/Minority/EWS students from pre-matric to post-doctoral level.",
       "eligibility": {
-        "occupation": ["student"],
+        "occupation": [
+          "student"
+        ],
         "maxIncome": 200000,
         "minAge": 5,
         "maxAge": 35,
         "gender": "all",
-        "category": ["sc", "st", "obc", "ews"],
+        "category": [
+          "sc",
+          "st",
+          "obc",
+          "ews"
+        ],
         "states": "all",
         "isStudent": true,
         "hasLand": false
       },
-      "documents": ["Aadhaar Card", "Income Certificate", "Caste Certificate", "Marksheet", "Bank Account", "Institution ID"],
+      "documents": [
+        "Aadhaar Card",
+        "Income Certificate",
+        "Caste Certificate",
+        "Marksheet",
+        "Bank Account",
+        "Institution ID"
+      ],
       "applyLink": "https://scholarships.gov.in",
       "howToApply": "Apply online at scholarships.gov.in before deadline",
       "deadline": "Usually November-December each year",
@@ -332,17 +494,28 @@
       "benefitType": "scholarship",
       "description": "Scholarship for OBC, EBC, and DNT students for Class 9-12 and top-class college education.",
       "eligibility": {
-        "occupation": ["student"],
+        "occupation": [
+          "student"
+        ],
         "maxIncome": 250000,
         "minAge": 10,
         "maxAge": 25,
         "gender": "all",
-        "category": ["obc", "ews"],
+        "category": [
+          "obc",
+          "ews"
+        ],
         "states": "all",
         "isStudent": true,
         "hasLand": false
       },
-      "documents": ["Aadhaar Card", "Income Certificate", "OBC/EBC Certificate", "Marksheet", "Bank Account"],
+      "documents": [
+        "Aadhaar Card",
+        "Income Certificate",
+        "OBC/EBC Certificate",
+        "Marksheet",
+        "Bank Account"
+      ],
       "applyLink": "https://yet.nta.ac.in",
       "howToApply": "Apply via NTA portal and appear for YET exam",
       "deadline": "Usually August-September",
@@ -358,17 +531,31 @@
       "benefitType": "insurance",
       "description": "Comprehensive crop insurance scheme covering all food crops, oilseeds, and commercial/horticultural crops against natural calamities.",
       "eligibility": {
-        "occupation": ["farmer"],
+        "occupation": [
+          "farmer"
+        ],
         "maxIncome": null,
         "minAge": 18,
         "maxAge": null,
         "gender": "all",
-        "category": ["general", "obc", "sc", "st", "ews"],
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": true
       },
-      "documents": ["Aadhaar Card", "Land Records", "Bank Account", "Sowing Certificate", "Crop Details"],
+      "documents": [
+        "Aadhaar Card",
+        "Land Records",
+        "Bank Account",
+        "Sowing Certificate",
+        "Crop Details"
+      ],
       "applyLink": "https://pmfby.gov.in",
       "howToApply": "Apply through CSC, banks, insurance companies, or online at pmfby.gov.in",
       "deadline": "Seasonal (Kharif: July, Rabi: December)",
@@ -384,18 +571,30 @@
       "benefitType": "awareness",
       "description": "Scheme to address declining Child Sex Ratio and related issues of women empowerment over a life-cycle continuum.",
       "eligibility": {
-        "occupation": ["all"],
+        "occupation": [
+          "all"
+        ],
         "maxIncome": null,
         "minAge": 0,
         "maxAge": 18,
         "gender": "female",
-        "category": ["general", "obc", "sc", "st", "ews"],
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
         "states": "all",
         "isStudent": true,
         "hasLand": false,
         "isGirlChild": true
       },
-      "documents": ["Birth Certificate", "Aadhaar Card", "School Enrollment Proof"],
+      "documents": [
+        "Birth Certificate",
+        "Aadhaar Card",
+        "School Enrollment Proof"
+      ],
       "applyLink": "https://wcd.nic.in",
       "howToApply": "No direct application — benefits are provided through district-level initiatives",
       "deadline": "Ongoing",
@@ -411,17 +610,30 @@
       "benefitType": "training",
       "description": "Skill development scheme for SC/OBC/EWS/DNT persons in agriculture, construction, electronics, and other sectors.",
       "eligibility": {
-        "occupation": ["unemployed", "daily_wage", "agricultural_worker"],
+        "occupation": [
+          "unemployed",
+          "daily_wage",
+          "agricultural_worker"
+        ],
         "maxIncome": 300000,
         "minAge": 18,
         "maxAge": 45,
         "gender": "all",
-        "category": ["sc", "obc", "ews"],
+        "category": [
+          "sc",
+          "obc",
+          "ews"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": false
       },
-      "documents": ["Aadhaar Card", "Caste Certificate", "Income Certificate", "Bank Account"],
+      "documents": [
+        "Aadhaar Card",
+        "Caste Certificate",
+        "Income Certificate",
+        "Bank Account"
+      ],
       "applyLink": "https://www.pmdakshportal.dosje.gov.in",
       "howToApply": "Register on portal or visit nearest training center",
       "deadline": "Ongoing",
@@ -437,17 +649,33 @@
       "benefitType": "loan",
       "description": "Provides timely and adequate credit to farmers for their agricultural needs including crop production, post-harvest expenses, and maintenance.",
       "eligibility": {
-        "occupation": ["farmer", "fisherman", "animal_husbandry"],
+        "occupation": [
+          "farmer",
+          "fisherman",
+          "animal_husbandry"
+        ],
         "maxIncome": null,
         "minAge": 18,
         "maxAge": 75,
         "gender": "all",
-        "category": ["general", "obc", "sc", "st", "ews"],
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": true
       },
-      "documents": ["Aadhaar Card", "Land Records", "Bank Account", "Passport Photo", "Identity Proof"],
+      "documents": [
+        "Aadhaar Card",
+        "Land Records",
+        "Bank Account",
+        "Passport Photo",
+        "Identity Proof"
+      ],
       "applyLink": "https://www.nabard.org",
       "howToApply": "Apply at any commercial bank, cooperative bank, or RRB",
       "deadline": "Ongoing",
@@ -463,17 +691,31 @@
       "benefitType": "pension",
       "description": "Pension scheme for senior citizens (60+) providing guaranteed return of 8% per annum for 10 years.",
       "eligibility": {
-        "occupation": ["all"],
+        "occupation": [
+          "all"
+        ],
         "maxIncome": null,
         "minAge": 60,
         "maxAge": null,
         "gender": "all",
-        "category": ["general", "obc", "sc", "st", "ews"],
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": false
       },
-      "documents": ["Aadhaar Card", "PAN Card", "Bank Account", "Age Proof", "Address Proof"],
+      "documents": [
+        "Aadhaar Card",
+        "PAN Card",
+        "Bank Account",
+        "Age Proof",
+        "Address Proof"
+      ],
       "applyLink": "https://www.licindia.in",
       "howToApply": "Apply through LIC office or online at licindia.in",
       "deadline": "March 2026",
@@ -489,17 +731,31 @@
       "benefitType": "pension",
       "description": "Voluntary pension scheme with market-linked returns. Additional tax benefit of ₹50,000 under 80CCD(1B).",
       "eligibility": {
-        "occupation": ["all"],
+        "occupation": [
+          "all"
+        ],
         "maxIncome": null,
         "minAge": 18,
         "maxAge": 70,
         "gender": "all",
-        "category": ["general", "obc", "sc", "st", "ews"],
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": false
       },
-      "documents": ["Aadhaar Card", "PAN Card", "Bank Account", "Mobile Number", "Address Proof"],
+      "documents": [
+        "Aadhaar Card",
+        "PAN Card",
+        "Bank Account",
+        "Mobile Number",
+        "Address Proof"
+      ],
       "applyLink": "https://www.npscra.nsdl.co.in",
       "howToApply": "Apply through bank, online at NPS portal, or via CRA",
       "deadline": "Ongoing",
@@ -515,17 +771,31 @@
       "benefitType": "subsidy",
       "description": "Solar energy scheme for farmers providing subsidized solar pumps and allowing farmers to sell surplus solar power to DISCOMs.",
       "eligibility": {
-        "occupation": ["farmer"],
+        "occupation": [
+          "farmer"
+        ],
         "maxIncome": null,
         "minAge": 18,
         "maxAge": null,
         "gender": "all",
-        "category": ["general", "obc", "sc", "st", "ews"],
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": true
       },
-      "documents": ["Aadhaar Card", "Land Records", "Bank Account", "Electricity Connection Details", "Quotation from Vendor"],
+      "documents": [
+        "Aadhaar Card",
+        "Land Records",
+        "Bank Account",
+        "Electricity Connection Details",
+        "Quotation from Vendor"
+      ],
       "applyLink": "https://mnre.gov.in",
       "howToApply": "Apply through state nodal agency or DISCOM office",
       "deadline": "Ongoing",
@@ -541,18 +811,29 @@
       "benefitType": "food",
       "description": "Free food grains to NFSA beneficiaries. Extended under National Food Security Act.",
       "eligibility": {
-        "occupation": ["all"],
+        "occupation": [
+          "all"
+        ],
         "maxIncome": null,
         "minAge": 0,
         "maxAge": null,
         "gender": "all",
-        "category": ["general", "obc", "sc", "st", "ews"],
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": false,
         "hasRationCard": true
       },
-      "documents": ["Ration Card", "Aadhaar Card linked to Ration Card"],
+      "documents": [
+        "Ration Card",
+        "Aadhaar Card linked to Ration Card"
+      ],
       "applyLink": "https://nfsa.gov.in",
       "howToApply": "No separate application — use existing Ration Card at PDS shop",
       "deadline": "Ongoing (currently extended)",
@@ -568,18 +849,35 @@
       "benefitType": "pension",
       "description": "Voluntary pension scheme for unorganized workers. Contribution ranges from ₹55 to ₹200/month based on entry age.",
       "eligibility": {
-        "occupation": ["daily_wage", "domestic_worker", "street_vendor", "construction_worker", "agricultural_worker", "ragpicker"],
+        "occupation": [
+          "daily_wage",
+          "domestic_worker",
+          "street_vendor",
+          "construction_worker",
+          "agricultural_worker",
+          "ragpicker"
+        ],
         "maxIncome": 15000,
         "minAge": 18,
         "maxAge": 40,
         "gender": "all",
-        "category": ["general", "obc", "sc", "st", "ews"],
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": false,
         "isGovtEmployee": false
       },
-      "documents": ["Aadhaar Card", "Bank Account with IFSC", "Mobile Number"],
+      "documents": [
+        "Aadhaar Card",
+        "Bank Account with IFSC",
+        "Mobile Number"
+      ],
       "applyLink": "https://maandhan.in",
       "howToApply": "Register at nearest CSC with Aadhaar and bank details",
       "deadline": "Must join before age 40",
@@ -595,19 +893,26 @@
       "benefitType": "grant",
       "description": "Integrated development of SC-majority villages with focus on education, health, and livelihood.",
       "eligibility": {
-        "occupation": ["all"],
+        "occupation": [
+          "all"
+        ],
         "maxIncome": null,
         "minAge": 0,
         "maxAge": null,
         "gender": "all",
-        "category": ["sc"],
+        "category": [
+          "sc"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": false,
         "isRural": true,
         "isVillageLevel": true
       },
-      "documents": ["Village-level application through Gram Panchayat", "SC population data"],
+      "documents": [
+        "Village-level application through Gram Panchayat",
+        "SC population data"
+      ],
       "applyLink": "https://socialjustice.nic.in",
       "howToApply": "Apply through District Collector / Gram Panchayat",
       "deadline": "Ongoing",
@@ -623,18 +928,28 @@
       "benefitType": "scholarship",
       "description": "Fellowship for OBC students pursuing M.Phil/Ph.D. Covers JRF and SRF with HRA.",
       "eligibility": {
-        "occupation": ["student"],
+        "occupation": [
+          "student"
+        ],
         "maxIncome": 800000,
         "minAge": 21,
         "maxAge": 35,
         "gender": "all",
-        "category": ["obc"],
+        "category": [
+          "obc"
+        ],
         "states": "all",
         "isStudent": true,
         "hasLand": false,
         "isPhD": true
       },
-      "documents": ["Aadhaar Card", "OBC Certificate", "Income Certificate", "NET/JRF Score Card", "University Admission Letter"],
+      "documents": [
+        "Aadhaar Card",
+        "OBC Certificate",
+        "Income Certificate",
+        "NET/JRF Score Card",
+        "University Admission Letter"
+      ],
       "applyLink": "https://www.ugc.ac.in",
       "howToApply": "Apply through UGC portal after qualifying NET/JRF",
       "deadline": "Usually October-November",
@@ -650,19 +965,33 @@
       "benefitType": "incentive",
       "description": "Action plan to build a strong startup ecosystem. Includes tax benefits, easier compliance, IPR support, and funding support.",
       "eligibility": {
-        "occupation": ["business_owner", "entrepreneur"],
+        "occupation": [
+          "business_owner",
+          "entrepreneur"
+        ],
         "maxIncome": null,
         "minAge": 18,
         "maxAge": null,
         "gender": "all",
-        "category": ["general", "obc", "sc", "st", "ews"],
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": false,
         "isStartup": true,
         "companyAge": 10
       },
-      "documents": ["Company Registration", "PAN Card", "Business Plan", "Recommendation Letter (if applicable)"],
+      "documents": [
+        "Company Registration",
+        "PAN Card",
+        "Business Plan",
+        "Recommendation Letter (if applicable)"
+      ],
       "applyLink": "https://www.startupindia.gov.in",
       "howToApply": "Register on Startup India portal and get DPIIT recognition",
       "deadline": "Ongoing",
@@ -678,17 +1007,30 @@
       "benefitType": "business_opportunity",
       "description": "Framework for setting up public Wi-Fi hotspots. No license required. Anyone can become a PDO (Public Data Office).",
       "eligibility": {
-        "occupation": ["all"],
+        "occupation": [
+          "all"
+        ],
         "maxIncome": null,
         "minAge": 18,
         "maxAge": null,
         "gender": "all",
-        "category": ["general", "obc", "sc", "st", "ews"],
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": false
       },
-      "documents": ["Aadhaar Card", "PAN Card", "Bank Account", "Shop/Location Proof"],
+      "documents": [
+        "Aadhaar Card",
+        "PAN Card",
+        "Bank Account",
+        "Shop/Location Proof"
+      ],
       "applyLink": "https://pmwani.gov.in",
       "howToApply": "Register as PDO on PM-WANI app or portal",
       "deadline": "Ongoing",
@@ -704,17 +1046,29 @@
       "benefitType": "service",
       "description": "Computerization and digitization of land records. Online access to cadastral maps, mutation records, and sale deeds.",
       "eligibility": {
-        "occupation": ["all"],
+        "occupation": [
+          "all"
+        ],
         "maxIncome": null,
         "minAge": 18,
         "maxAge": null,
         "gender": "all",
-        "category": ["general", "obc", "sc", "st", "ews"],
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": true
       },
-      "documents": ["Aadhaar Card", "Land Records", "Property Documents"],
+      "documents": [
+        "Aadhaar Card",
+        "Land Records",
+        "Property Documents"
+      ],
       "applyLink": "https://dolr.gov.in",
       "howToApply": "Access through state land records portal (e.g., UP: upbhulekh.gov.in)",
       "deadline": "Ongoing",
@@ -730,18 +1084,33 @@
       "benefitType": "training",
       "description": "Flagship skill development scheme providing free training in 40+ sectors. Short-term training (150-300 hours) with placement assistance.",
       "eligibility": {
-        "occupation": ["unemployed", "daily_wage", "student"],
+        "occupation": [
+          "unemployed",
+          "daily_wage",
+          "student"
+        ],
         "maxIncome": null,
         "minAge": 15,
         "maxAge": 45,
         "gender": "all",
-        "category": ["general", "obc", "sc", "st", "ews"],
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": false,
         "hasNotAvailedPMKVY": true
       },
-      "documents": ["Aadhaar Card", "Bank Account", "Educational Certificate", "Passport Photo"],
+      "documents": [
+        "Aadhaar Card",
+        "Bank Account",
+        "Educational Certificate",
+        "Passport Photo"
+      ],
       "applyLink": "https://www.pmkvyofficial.org",
       "howToApply": "Register on portal or visit nearest training center (TP)",
       "deadline": "Ongoing",
@@ -757,19 +1126,29 @@
       "benefitType": "service",
       "description": "To develop and rejuvenate 75 water bodies in each district of the country for water conservation.",
       "eligibility": {
-        "occupation": ["all"],
+        "occupation": [
+          "all"
+        ],
         "maxIncome": null,
         "minAge": 0,
         "maxAge": null,
         "gender": "all",
-        "category": ["general", "obc", "sc", "st", "ews"],
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": false,
         "isRural": true,
         "isVillageLevel": true
       },
-      "documents": ["Village-level proposal through Gram Panchayat"],
+      "documents": [
+        "Village-level proposal through Gram Panchayat"
+      ],
       "applyLink": "https://amritsarovar.gov.in",
       "howToApply": "Through Gram Panchayat / District Administration",
       "deadline": "August 2025",
@@ -785,39 +1164,667 @@
       "benefitType": "service",
       "description": "Portability of ration card — migrant workers can claim food grains from any FPS in the country using Aadhaar authentication.",
       "eligibility": {
-        "occupation": ["all"],
+        "occupation": [
+          "all"
+        ],
         "maxIncome": null,
         "minAge": 0,
         "maxAge": null,
         "gender": "all",
-        "category": ["general", "obc", "sc", "st", "ews"],
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
         "states": "all",
         "isStudent": false,
         "hasLand": false,
         "hasRationCard": true,
         "isMigrant": true
       },
-      "documents": ["Ration Card", "Aadhaar Card linked to Ration Card"],
+      "documents": [
+        "Ration Card",
+        "Aadhaar Card linked to Ration Card"
+      ],
       "applyLink": "https://nfsa.gov.in",
       "howToApply": "Already active — use existing ration card at any FPS with Aadhaar",
       "deadline": "Already implemented nationwide",
       "isPopular": true
+    },
+    {
+      "id": "pm-suraksha-bima",
+      "name": "PM Suraksha Bima Yojana (PMSBY)",
+      "ministry": "Ministry of Finance",
+      "category": "health",
+      "benefit": "Accidental insurance cover of ₹2,00,000 for just ₹20/year",
+      "benefitAmount": 200000,
+      "benefitType": "insurance",
+      "description": "Accidental death and disability insurance scheme. Covers death and permanent disability due to accident.",
+      "eligibility": {
+        "occupation": [
+          "all"
+        ],
+        "maxIncome": null,
+        "minAge": 18,
+        "maxAge": 70,
+        "gender": "all",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all"
+      },
+      "documents": [
+        "Aadhaar Card",
+        "Bank Account",
+        "Mobile Number"
+      ],
+      "applyLink": "https://www.jansuraksha.gov.in",
+      "howToApply": "Apply through your bank branch or online banking",
+      "deadline": "Renewed annually by June 1",
+      "isPopular": true
+    },
+    {
+      "id": "pm-jeevan-jyoti",
+      "name": "PM Jeevan Jyoti Bima Yojana (PMJJBY)",
+      "ministry": "Ministry of Finance",
+      "category": "health",
+      "benefit": "Life insurance cover of ₹2,00,000 for just ₹436/year",
+      "benefitAmount": 200000,
+      "benefitType": "insurance",
+      "description": "Life insurance scheme providing coverage in case of death of the insured for any reason.",
+      "eligibility": {
+        "occupation": [
+          "all"
+        ],
+        "maxIncome": null,
+        "minAge": 18,
+        "maxAge": 50,
+        "gender": "all",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all"
+      },
+      "documents": [
+        "Aadhaar Card",
+        "Bank Account",
+        "Mobile Number"
+      ],
+      "applyLink": "https://www.jansuraksha.gov.in",
+      "howToApply": "Apply through your bank branch or online banking",
+      "deadline": "Renewed annually by May 31",
+      "isPopular": true
+    },
+    {
+      "id": "swayam-sidha",
+      "name": "Swayam Sidha Yojana (Micro Credit)",
+      "ministry": "Ministry of Women & Child Development",
+      "category": "business",
+      "benefit": "Micro-credit loans up to ₹1,50,000 for SHG women at low interest",
+      "benefitAmount": 150000,
+      "benefitType": "loan",
+      "description": "Provides micro-credit to women Self-Help Groups (SHGs) for income-generating activities.",
+      "eligibility": {
+        "occupation": [
+          "all"
+        ],
+        "maxIncome": null,
+        "minAge": 18,
+        "maxAge": 60,
+        "gender": "female",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all"
+      },
+      "documents": [
+        "SHG Certificate",
+        "Aadhaar Card",
+        "Bank Account"
+      ],
+      "applyLink": "https://wcd.nic.in",
+      "howToApply": "Through District Rural Development Agency (DRDA)",
+      "deadline": "Ongoing",
+      "isPopular": false
+    },
+    {
+      "id": "pm-annadata",
+      "name": "PM Annadata Aay Sanrakshan Abhiyan (PM-AASHA)",
+      "ministry": "Ministry of Agriculture",
+      "category": "agriculture",
+      "benefit": "Price support for oilseeds, pulses, and copra at MSP",
+      "benefitAmount": 0,
+      "benefitType": "price_support",
+      "description": "Ensures remunerative prices for farmers growing oilseeds, pulses, and copra through Price Support Scheme.",
+      "eligibility": {
+        "occupation": [
+          "farmer"
+        ],
+        "maxIncome": null,
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "all",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all",
+        "hasLand": true
+      },
+      "documents": [
+        "Aadhaar Card",
+        "Land Records",
+        "Bank Account",
+        "Crop Details"
+      ],
+      "applyLink": "https://agricoop.nic.in",
+      "howToApply": "Through designated procurement agencies in your state",
+      "deadline": "Seasonal",
+      "isPopular": false
+    },
+    {
+      "id": "national-creche",
+      "name": "National Crèche Scheme",
+      "ministry": "Ministry of Women & Child Development",
+      "category": "welfare",
+      "benefit": "Free childcare at crèche for working mothers (6 months to 6 years)",
+      "benefitAmount": 0,
+      "benefitType": "service",
+      "description": "Day-care facility for children of working mothers, providing nutrition, pre-school education, and health services.",
+      "eligibility": {
+        "occupation": [
+          "salaried",
+          "daily_wage",
+          "agricultural_worker"
+        ],
+        "maxIncome": null,
+        "minAge": 18,
+        "maxAge": 60,
+        "gender": "female",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all"
+      },
+      "documents": [
+        "Aadhaar Card",
+        "Employment Proof",
+        "Child Birth Certificate"
+      ],
+      "applyLink": "https://wcd.nic.in",
+      "howToApply": "Through nearest crèche center or District Programme Officer",
+      "deadline": "Ongoing",
+      "isPopular": false
+    },
+    {
+      "id": "samagra-shiksha",
+      "name": "Samagra Shiksha Abhiyan",
+      "ministry": "Ministry of Education",
+      "category": "education",
+      "benefit": "Free education + textbooks + uniforms + transport for school children",
+      "benefitAmount": 0,
+      "benefitType": "education",
+      "description": "Integrated scheme for school education from pre-school to Class 12. Covers uniforms, textbooks, and transport.",
+      "eligibility": {
+        "occupation": [
+          "student"
+        ],
+        "maxIncome": null,
+        "minAge": 3,
+        "maxAge": 18,
+        "gender": "all",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all",
+        "isStudent": true
+      },
+      "documents": [
+        "Aadhaar Card",
+        "School Enrollment Certificate",
+        "Parent Aadhaar"
+      ],
+      "applyLink": "https://samagra.shiksha.gov.in",
+      "howToApply": "No separate application — enrolled through government schools",
+      "deadline": "Ongoing",
+      "isPopular": true
+    },
+    {
+      "id": "pm-dhan-dhanya",
+      "name": "PM Dhan-Dhanya Yojana",
+      "ministry": "Ministry of Agriculture",
+      "category": "agriculture",
+      "benefit": "Financial assistance for diversification to high-value crops",
+      "benefitAmount": 0,
+      "benefitType": "subsidy",
+      "description": "Supports farmers in 100 districts to diversify from cereals to horticulture, oilseeds, and pulses.",
+      "eligibility": {
+        "occupation": [
+          "farmer"
+        ],
+        "maxIncome": null,
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "all",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all",
+        "hasLand": true
+      },
+      "documents": [
+        "Aadhaar Card",
+        "Land Records",
+        "Bank Account"
+      ],
+      "applyLink": "https://agricoop.nic.in",
+      "howToApply": "Through Block Agriculture Officer",
+      "deadline": "Ongoing",
+      "isPopular": false
+    },
+    {
+      "id": "pm-internship",
+      "name": "PM Internship Scheme",
+      "ministry": "Ministry of Corporate Affairs",
+      "category": "employment",
+      "benefit": "₹5,000/month stipend + ₹6,000 one-time assistance for 12-month internship",
+      "benefitAmount": 66000,
+      "benefitType": "stipend",
+      "description": "Internship in top companies for youth aged 21-24. Provides real-world work experience with monthly stipend.",
+      "eligibility": {
+        "occupation": [
+          "student",
+          "unemployed"
+        ],
+        "maxIncome": 800000,
+        "minAge": 21,
+        "maxAge": 24,
+        "gender": "all",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all"
+      },
+      "documents": [
+        "Aadhaar Card",
+        "Educational Certificates",
+        "Bank Account",
+        "PAN Card"
+      ],
+      "applyLink": "https://pminternship.mca.gov.in",
+      "howToApply": "Apply online at PM Internship portal",
+      "deadline": "Usually September-October",
+      "isPopular": true
+    },
+    {
+      "id": "pm-surya-ghar",
+      "name": "PM Surya Ghar Muft Bijli Yojana",
+      "ministry": "Ministry of New & Renewable Energy",
+      "category": "welfare",
+      "benefit": "Free electricity up to 300 units/month via rooftop solar + 60% subsidy",
+      "benefitAmount": 78000,
+      "benefitType": "subsidy",
+      "description": "Install rooftop solar panels and get up to 300 units free electricity per month. Government provides 60% subsidy.",
+      "eligibility": {
+        "occupation": [
+          "all"
+        ],
+        "maxIncome": null,
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "all",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all",
+        "hasHouse": true
+      },
+      "documents": [
+        "Aadhaar Card",
+        "Electricity Bill",
+        "House Ownership Proof",
+        "Bank Account"
+      ],
+      "applyLink": "https://pmsuryaghar.gov.in",
+      "howToApply": "Apply online at pmsuryaghar.gov.in",
+      "deadline": "March 2027",
+      "isPopular": true
+    },
+    {
+      "id": "nrlm",
+      "name": "National Rural Livelihood Mission (NRLM)",
+      "ministry": "Ministry of Rural Development",
+      "category": "employment",
+      "benefit": "₹15,000-₹25,000 support for Self-Help Groups + skill training",
+      "benefitAmount": 25000,
+      "benefitType": "grant",
+      "description": "Organizes rural poor into Self-Help Groups and provides financial assistance, skill training, and market linkages.",
+      "eligibility": {
+        "occupation": [
+          "daily_wage",
+          "agricultural_worker",
+          "homemaker",
+          "unemployed"
+        ],
+        "maxIncome": null,
+        "minAge": 18,
+        "maxAge": 60,
+        "gender": "all",
+        "category": [
+          "sc",
+          "st",
+          "ews",
+          "obc"
+        ],
+        "states": "all",
+        "isRural": true
+      },
+      "documents": [
+        "Aadhaar Card",
+        "BPL Certificate",
+        "Bank Account"
+      ],
+      "applyLink": "https://aajeevika.gov.in",
+      "howToApply": "Through Block Mission Management Unit or Gram Panchayat",
+      "deadline": "Ongoing",
+      "isPopular": true
+    },
+    {
+      "id": "pm-vishwakarma",
+      "name": "PM Vishwakarma Yojana",
+      "ministry": "Ministry of MSME",
+      "category": "business",
+      "benefit": "Loan up to ₹3,00,000 at 5% interest + skill training + ₹500/day stipend",
+      "benefitAmount": 300000,
+      "benefitType": "loan",
+      "description": "Support for traditional artisans and craftspeople including carpenters, blacksmiths, potters, tailors, and more.",
+      "eligibility": {
+        "occupation": [
+          "self_employed",
+          "business_owner"
+        ],
+        "maxIncome": null,
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "all",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all"
+      },
+      "documents": [
+        "Aadhaar Card",
+        "Artisan Certificate",
+        "Bank Account",
+        "Skill Proof"
+      ],
+      "applyLink": "https://pmvishwakarma.gov.in",
+      "howToApply": "Apply at nearest CSC or online at pmvishwakarma.gov.in",
+      "deadline": "Ongoing",
+      "isPopular": true
+    },
+    {
+      "id": "national-food-security",
+      "name": "National Food Security Act (NFSA)",
+      "ministry": "Ministry of Consumer Affairs",
+      "category": "welfare",
+      "benefit": "Subsidized food grains: Rice at ₹3/kg, Wheat at ₹2/kg, Coarse grains at ₹1/kg",
+      "benefitAmount": 0,
+      "benefitType": "food",
+      "description": "Covers 67% of population with highly subsidized food grains through Public Distribution System.",
+      "eligibility": {
+        "occupation": [
+          "all"
+        ],
+        "maxIncome": null,
+        "minAge": 0,
+        "maxAge": null,
+        "gender": "all",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all",
+        "hasRationCard": true
+      },
+      "documents": [
+        "Ration Card",
+        "Aadhaar Card"
+      ],
+      "applyLink": "https://nfsa.gov.in",
+      "howToApply": "Use existing ration card at nearest PDS shop",
+      "deadline": "Ongoing (permanent)",
+      "isPopular": true
+    },
+    {
+      "id": "atal-bhujal",
+      "name": "Atal Bhujal Yojana",
+      "ministry": "Ministry of Jal Shakti",
+      "category": "welfare",
+      "benefit": "Community-based groundwater management + financial support",
+      "benefitAmount": 0,
+      "benefitType": "service",
+      "description": "Community-led groundwater management scheme in water-stressed areas. Focuses on demand-side management.",
+      "eligibility": {
+        "occupation": [
+          "farmer"
+        ],
+        "maxIncome": null,
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "all",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": [
+          "gujarat",
+          "haryana",
+          "karnataka",
+          "madhya-pradesh",
+          "maharashtra",
+          "rajasthan",
+          "uttar-pradesh"
+        ],
+        "isRural": true
+      },
+      "documents": [
+        "Aadhaar Card",
+        "Land Records",
+        "Water User Group Certificate"
+      ],
+      "applyLink": "https://jalshakti.gov.in",
+      "howToApply": "Through Gram Panchayat in covered villages",
+      "deadline": "March 2027",
+      "isPopular": false
+    },
+    {
+      "id": "credit-guarantee-msme",
+      "name": "Credit Guarantee Fund Trust for MSME (CGTMSE)",
+      "ministry": "Ministry of MSME",
+      "category": "business",
+      "benefit": "Collateral-free loans up to ₹5,00,00,000 for MSMEs",
+      "benefitAmount": 5000000,
+      "benefitType": "loan",
+      "description": "Provides credit guarantee to banks for loans given to micro and small enterprises without collateral.",
+      "eligibility": {
+        "occupation": [
+          "business_owner",
+          "self_employed"
+        ],
+        "maxIncome": null,
+        "minAge": 18,
+        "maxAge": 65,
+        "gender": "all",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all"
+      },
+      "documents": [
+        "Business Registration",
+        "PAN Card",
+        "Aadhaar Card",
+        "Business Plan",
+        "Bank Account"
+      ],
+      "applyLink": "https://www.cgtmse.in",
+      "howToApply": "Apply through any bank branch with MSME registration",
+      "deadline": "Ongoing",
+      "isPopular": false
+    },
+    {
+      "id": "pm-eBus-sewa",
+      "name": "PM e-Bus Sewa Scheme",
+      "ministry": "Ministry of Housing & Urban Affairs",
+      "category": "digital",
+      "benefit": "Electric bus deployment in 169 cities — job creation for drivers/conductors",
+      "benefitAmount": 0,
+      "benefitType": "service",
+      "description": "Deployment of 10,000 electric buses across 169 cities under PPP model. Creates employment and improves public transport.",
+      "eligibility": {
+        "occupation": [
+          "all"
+        ],
+        "maxIncome": null,
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "all",
+        "category": [
+          "general",
+          "obc",
+          "sc",
+          "st",
+          "ews"
+        ],
+        "states": "all",
+        "isUrban": true
+      },
+      "documents": [
+        "Aadhaar Card",
+        "Driving License (for drivers)"
+      ],
+      "applyLink": "https://mohua.gov.in",
+      "howToApply": "Through municipal corporations in covered cities",
+      "deadline": "Ongoing",
+      "isPopular": false
     }
   ],
   "categories": [
-    {"id": "agriculture", "name": "Agriculture & Farming", "icon": "🌾", "count": 5},
-    {"id": "health", "name": "Health & Insurance", "icon": "🏥", "count": 1},
-    {"id": "housing", "name": "Housing", "icon": "🏠", "count": 2},
-    {"id": "business", "name": "Business & Loans", "icon": "💼", "count": 4},
-    {"id": "education", "name": "Education & Scholarships", "icon": "🎓", "count": 3},
-    {"id": "employment", "name": "Employment & Skills", "icon": "👔", "count": 2},
-    {"id": "pension", "name": "Pension & Retirement", "icon": "👴", "count": 4},
-    {"id": "savings", "name": "Savings & Investment", "icon": "💰", "count": 1},
-    {"id": "welfare", "name": "Social Welfare", "icon": "🤝", "count": 5},
-    {"id": "digital", "name": "Digital India", "icon": "📱", "count": 2}
+    {
+      "id": "agriculture",
+      "name": "Agriculture & Farming",
+      "icon": "🌾",
+      "count": 5
+    },
+    {
+      "id": "health",
+      "name": "Health & Insurance",
+      "icon": "🏥",
+      "count": 1
+    },
+    {
+      "id": "housing",
+      "name": "Housing",
+      "icon": "🏠",
+      "count": 2
+    },
+    {
+      "id": "business",
+      "name": "Business & Loans",
+      "icon": "💼",
+      "count": 4
+    },
+    {
+      "id": "education",
+      "name": "Education & Scholarships",
+      "icon": "🎓",
+      "count": 3
+    },
+    {
+      "id": "employment",
+      "name": "Employment & Skills",
+      "icon": "👔",
+      "count": 2
+    },
+    {
+      "id": "pension",
+      "name": "Pension & Retirement",
+      "icon": "👴",
+      "count": 4
+    },
+    {
+      "id": "savings",
+      "name": "Savings & Investment",
+      "icon": "💰",
+      "count": 1
+    },
+    {
+      "id": "welfare",
+      "name": "Social Welfare",
+      "icon": "🤝",
+      "count": 5
+    },
+    {
+      "id": "digital",
+      "name": "Digital India",
+      "icon": "📱",
+      "count": 2
+    }
   ],
   "meta": {
-    "totalSchemes": 30,
+    "totalSchemes": 45,
     "lastUpdated": "2026-04-23",
     "source": "myscheme.gov.in, pib.gov.in, ministry websites"
   }

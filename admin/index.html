@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard — SchemeFinder.in</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-body">
+  <!-- Admin Login -->
+  <div id="admin-login" class="admin-login">
+    <div class="login-card">
+      <h1>🏛️ SchemeFinder Admin</h1>
+      <p>Enter admin password to access dashboard</p>
+      <form id="login-form">
+        <input type="password" id="admin-password" placeholder="Admin Password" required>
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+      </form>
+      <p class="login-hint">Default: admin123 (change in admin.js)</p>
+    </div>
+  </div>
+
+  <!-- Admin Dashboard -->
+  <div id="admin-dashboard" class="admin-dashboard" style="display:none;">
+    <!-- Header -->
+    <header class="admin-header">
+      <div class="admin-header-inner">
+        <h2>🏛️ SchemeFinder Admin</h2>
+        <div class="admin-actions">
+          <button class="btn btn-sm btn-outline" onclick="AdminPanel.exportData()">📥 Export CSV</button>
+          <button class="btn btn-sm btn-outline" onclick="AdminPanel.clearData()">🗑️ Clear Data</button>
+          <button class="btn btn-sm btn-outline" onclick="AdminPanel.logout()">🚪 Logout</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Stats Overview -->
+    <section class="admin-section">
+      <h3>📊 Overview</h3>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">👥</div>
+          <div class="stat-value" id="stat-total">0</div>
+          <div class="stat-label">Total Searches</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">💰</div>
+          <div class="stat-value" id="stat-paid">0</div>
+          <div class="stat-label">Paid Users</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">📈</div>
+          <div class="stat-value" id="stat-today">0</div>
+          <div class="stat-label">Today's Searches</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">💵</div>
+          <div class="stat-value" id="stat-revenue">₹0</div>
+          <div class="stat-label">Total Revenue</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">📊</div>
+          <div class="stat-value" id="stat-conversion">0%</div>
+          <div class="stat-label">Conversion Rate</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🔄</div>
+          <div class="stat-value" id="stat-returning">0</div>
+          <div class="stat-label">Returning Users</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Charts -->
+    <section class="admin-section">
+      <h3>📈 Daily Searches (Last 7 Days)</h3>
+      <div class="chart-container">
+        <canvas id="daily-chart" width="800" height="300"></canvas>
+      </div>
+    </section>
+
+    <!-- Scheme Popularity -->
+    <section class="admin-section">
+      <h3>🏆 Top Matched Schemes</h3>
+      <div id="scheme-stats" class="scheme-stats-list">
+        <!-- Injected by JS -->
+      </div>
+    </section>
+
+    <!-- Demographics -->
+    <section class="admin-section">
+      <h3>👥 User Demographics</h3>
+      <div class="demographics-grid">
+        <div class="demo-card">
+          <h4>By Occupation</h4>
+          <div id="occupation-stats"></div>
+        </div>
+        <div class="demo-card">
+          <h4>By Category</h4>
+          <div id="category-stats"></div>
+        </div>
+        <div class="demo-card">
+          <h4>By State (Top 10)</h4>
+          <div id="state-stats"></div>
+        </div>
+        <div class="demo-card">
+          <h4>By Income Range</h4>
+          <div id="income-stats"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent Searches -->
+    <section class="admin-section">
+      <h3>🕐 Recent Searches</h3>
+      <div class="table-container">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Age</th>
+              <th>State</th>
+              <th>Income</th>
+              <th>Occupation</th>
+              <th>Category</th>
+              <th>Schemes Found</th>
+              <th>Paid</th>
+            </tr>
+          </thead>
+          <tbody id="recent-searches">
+            <!-- Injected by JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Payment History -->
+    <section class="admin-section">
+      <h3>💳 Payment History</h3>
+      <div class="table-container">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Payment ID</th>
+              <th>Amount</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="payment-history">
+            <!-- Injected by JS -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Settings -->
+    <section class="admin-section">
+      <h3>⚙️ Settings</h3>
+      <div class="settings-grid">
+        <div class="setting-item">
+          <label>Admin Password</label>
+          <div class="setting-input">
+            <input type="password" id="setting-password" value="admin123">
+            <button class="btn btn-sm btn-primary" onclick="AdminPanel.updatePassword()">Update</button>
+          </div>
+        </div>
+        <div class="setting-item">
+          <label>Razorpay Key ID</label>
+          <div class="setting-input">
+            <input type="text" id="setting-razorpay" placeholder="rzp_live_XXXXXX">
+            <button class="btn btn-sm btn-primary" onclick="AdminPanel.updateRazorpay()">Update</button>
+          </div>
+        </div>
+        <div class="setting-item">
+          <label>Price (₹)</label>
+          <div class="setting-input">
+            <input type="number" id="setting-price" value="99">
+            <button class="btn btn-sm btn-primary" onclick="AdminPanel.updatePrice()">Update</button>
+          </div>
+        </div>
+        <div class="setting-item">
+          <label>Google Analytics ID</label>
+          <div class="setting-input">
+            <input type="text" id="setting-ga" placeholder="G-XXXXXXXXXX">
+            <button class="btn btn-sm btn-primary" onclick="AdminPanel.updateGA()">Update</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="../js/admin.js"></script>
+</body>
+</html>
