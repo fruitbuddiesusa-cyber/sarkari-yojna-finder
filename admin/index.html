@@ -15,10 +15,11 @@
       <h1>🏛️ SchemeFinder Admin</h1>
       <p>Enter admin password to access dashboard</p>
       <form id="login-form">
-        <input type="password" id="admin-password" placeholder="Admin Password" required>
+        <input type="password" id="admin-password" placeholder="Admin Password" required autofocus>
         <button type="submit" class="btn btn-primary btn-block">Login</button>
+        <p id="login-error" style="display:none;color:#EF4444;font-size:14px;margin-top:12px">❌ Incorrect password</p>
       </form>
-      <p class="login-hint">Default: admin123 (change in admin.js)</p>
+      <p class="login-hint">Change password in Settings after login</p>
     </div>
   </div>
 
