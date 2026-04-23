@@ -1,0 +1,7 @@
+# robots.txt — SchemeFinder.in
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /data/
+
+Sitemap: https://yourdomain.com/sitemap.xml

@@ -1,0 +1,24 @@
+{
+  "name": "sarkari-yojna-finder",
+  "version": "1.0.0",
+  "description": "Find government schemes you're eligible for — free eligibility checker for 30+ Indian government schemes",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve . -p 3000",
+    "start": "npx serve . -p 3000",
+    "build": "echo 'Static site — no build needed'"
+  },
+  "keywords": [
+    "government scheme",
+    "sarkari yojana",
+    "PM Kisan",
+    "Ayushman Bharat",
+    "eligibility checker",
+    "India government benefits"
+  ],
+  "author": "SchemeFinder.in",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  }
+}
