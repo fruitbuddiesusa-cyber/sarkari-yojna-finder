@@ -1,7 +1,17 @@
 # robots.txt — SchemeFinder.in
 User-agent: *
 Allow: /
+Disallow: /admin/
 Disallow: /api/
 Disallow: /data/
+Disallow: /js/
+Disallow: /css/
+
+# Block all bots from admin
+User-agent: Googlebot
+Disallow: /admin/
+
+User-agent: Bingbot
+Disallow: /admin/
 
 Sitemap: https://yourdomain.com/sitemap.xml

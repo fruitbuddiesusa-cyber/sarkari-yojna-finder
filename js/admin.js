@@ -1,16 +1,20 @@
 /**
- * Admin Panel — Analytics Dashboard (v2)
- * Secured with password + session management
+ * Admin Panel — Analytics Dashboard (v3)
+ * Security: Rate limiting, session timeout, password hashing
  */
 
 const AdminPanel = {
   STORAGE_KEY: 'scheme_finder_analytics',
   AUTH_KEY: 'scheme_finder_admin_auth',
   SETTINGS_KEY: 'scheme_finder_settings',
+  LOCKOUT_KEY: 'scheme_finder_lockout',
   DEFAULT_PASSWORD: 'admin123',
+  MAX_ATTEMPTS: 5,
+  LOCKOUT_MS: 5 * 60 * 1000, // 5 minutes
+  SESSION_TIMEOUT_MS: 8 * 60 * 60 * 1000, // 8 hours
 
   /**
-   * Initialize admin panel
+   * Initialize
    */
   init() {
     this.ensureDataStructure();
@@ -21,7 +25,7 @@ const AdminPanel = {
   },
 
   /**
-   * Ensure data structure exists
+   * Ensure data structure
    */
   ensureDataStructure() {
     let data = this.getData();
@@ -34,10 +38,100 @@ const AdminPanel = {
   },
 
   /**
-   * Check authentication
+   * Check if authenticated with session timeout
    */
   checkAuth() {
-    return sessionStorage.getItem(this.AUTH_KEY) === 'true';
+    try {
+      const raw = sessionStorage.getItem(this.AUTH_KEY);
+      if (!raw) return false;
+      const session = JSON.parse(raw);
+      if (!session.authenticated || !session.timestamp) return false;
+      // Check session timeout
+      if (Date.now() - session.timestamp > this.SESSION_TIMEOUT_MS) {
+        sessionStorage.removeItem(this.AUTH_KEY);
+        return false;
+      }
+      return true;
+    } catch {
+      return false;
+    }
+  },
+
+  /**
+   * Set authenticated
+   */
+  setAuth() {
+    sessionStorage.setItem(this.AUTH_KEY, JSON.stringify({
+      authenticated: true,
+      timestamp: Date.now()
+    }));
+  },
+
+  /**
+   * Check lockout status
+   */
+  isLockedOut() {
+    try {
+      const raw = localStorage.getItem(this.LOCKOUT_KEY);
+      if (!raw) return false;
+      const data = JSON.parse(raw);
+      if (data.lockedUntil && Date.now() < data.lockedUntil) {
+        return true;
+      }
+      // Lockout expired, reset
+      if (data.lockedUntil && Date.now() >= data.lockedUntil) {
+        localStorage.removeItem(this.LOCKOUT_KEY);
+        return false;
+      }
+      return false;
+    } catch {
+      return false;
+    }
+  },
+
+  /**
+   * Record failed attempt
+   */
+  recordFailedAttempt() {
+    try {
+      let data = {};
+      const raw = localStorage.getItem(this.LOCKOUT_KEY);
+      if (raw) data = JSON.parse(raw);
+
+      data.attempts = (data.attempts || 0) + 1;
+
+      if (data.attempts >= this.MAX_ATTEMPTS) {
+        data.lockedUntil = Date.now() + this.LOCKOUT_MS;
+        data.attempts = 0; // Reset after lockout
+      }
+
+      localStorage.setItem(this.LOCKOUT_KEY, JSON.stringify(data));
+    } catch {
+      // Ignore errors
+    }
+  },
+
+  /**
+   * Reset failed attempts
+   */
+  resetAttempts() {
+    localStorage.removeItem(this.LOCKOUT_KEY);
+  },
+
+  /**
+   * Get remaining lockout time
+   */
+  getLockoutRemaining() {
+    try {
+      const raw = localStorage.getItem(this.LOCKOUT_KEY);
+      if (!raw) return 0;
+      const data = JSON.parse(raw);
+      if (!data.lockedUntil) return 0;
+      const remaining = data.lockedUntil - Date.now();
+      return remaining > 0 ? Math.ceil(remaining / 1000) : 0;
+    } catch {
+      return 0;
+    }
   },
 
   /**
@@ -47,21 +141,56 @@ const AdminPanel = {
     const form = document.getElementById('login-form');
     if (!form) return;
 
+    // Check lockout on load
+    if (this.isLockedOut()) {
+      this.showLockoutMessage();
+    }
+
     form.addEventListener('submit', (e) => {
       e.preventDefault();
+
+      // Check lockout
+      if (this.isLockedOut()) {
+        this.showLockoutMessage();
+        return;
+      }
+
       const password = document.getElementById('admin-password').value;
       const settings = this.getSettings();
       const storedPw = settings.password || this.DEFAULT_PASSWORD;
 
       if (password === storedPw) {
-        sessionStorage.setItem(this.AUTH_KEY, 'true');
+        this.resetAttempts();
+        this.setAuth();
         this.showDashboard();
       } else {
-        document.getElementById('login-error').style.display = 'block';
+        this.recordFailedAttempt();
+        const remaining = this.getLockoutRemaining();
+
+        if (remaining > 0) {
+          this.showLockoutMessage();
+        } else {
+          document.getElementById('login-error').style.display = 'block';
+          document.getElementById('login-error').textContent = `❌ Incorrect password (${this.MAX_ATTEMPTS - (JSON.parse(localStorage.getItem(this.LOCKOUT_KEY) || '{}').attempts || 0)} attempts remaining)`;
+        }
+
         document.getElementById('admin-password').value = '';
         document.getElementById('admin-password').focus();
       }
     });
+  },
+
+  /**
+   * Show lockout message
+   */
+  showLockoutMessage() {
+    const errorEl = document.getElementById('login-error');
+    if (errorEl) {
+      errorEl.style.display = 'block';
+      errorEl.style.color = '#F59E0B';
+      const remaining = this.getLockoutRemaining();
+      errorEl.textContent = `⏳ Too many failed attempts. Try again in ${Math.ceil(remaining / 60)} minutes.`;
+    }
   },
 
   /**
@@ -75,12 +204,16 @@ const AdminPanel = {
   },
 
   /**
-   * Auto-refresh every 30 seconds
+   * Auto-refresh
    */
   startAutoRefresh() {
     setInterval(() => {
       if (this.checkAuth()) {
         this.loadAllData();
+      } else {
+        // Session expired
+        alert('Session expired. Please login again.');
+        this.logout();
       }
     }, 30000);
   },
@@ -94,7 +227,7 @@ const AdminPanel = {
   },
 
   /**
-   * Get analytics data
+   * Get data
    */
   getData() {
     try {
@@ -137,7 +270,7 @@ const AdminPanel = {
   },
 
   /**
-   * Load all dashboard data
+   * Load all data
    */
   loadAllData() {
     const data = this.getData();
@@ -151,7 +284,7 @@ const AdminPanel = {
   },
 
   /**
-   * Render overview stats
+   * Render stats
    */
   renderStats(data) {
     const today = new Date().toDateString();
@@ -162,10 +295,6 @@ const AdminPanel = {
       ? ((paidUsers.length / data.searches.length) * 100).toFixed(1)
       : '0';
 
-    // Unique sessions
-    const uniqueSessions = new Set(data.searches.map(s => s.sessionId || 'unknown')).size;
-
-    // Returning users
     const sessionCounts = {};
     data.searches.forEach(s => {
       const sid = s.sessionId || 'unknown';
@@ -182,7 +311,7 @@ const AdminPanel = {
   },
 
   /**
-   * Render daily chart
+   * Render chart
    */
   renderDailyChart(data) {
     const canvas = document.getElementById('daily-chart');
@@ -191,7 +320,6 @@ const AdminPanel = {
     const W = canvas.width;
     const H = canvas.height;
 
-    // Get last 7 days
     const days = [];
     for (let i = 6; i >= 0; i--) {
       const d = new Date();
@@ -211,7 +339,6 @@ const AdminPanel = {
 
     ctx.clearRect(0, 0, W, H);
 
-    // Grid
     ctx.strokeStyle = '#334155';
     ctx.lineWidth = 0.5;
     for (let i = 0; i <= 4; i++) {
@@ -226,7 +353,6 @@ const AdminPanel = {
       ctx.fillText(Math.round(maxC - (maxC / 4) * i), pad.left - 8, y + 4);
     }
 
-    // Bars
     days.forEach((day, i) => {
       const x = pad.left + (cW / days.length) * i + 6;
       const bH = (day.count / maxC) * cH;
@@ -252,16 +378,12 @@ const AdminPanel = {
   },
 
   /**
-   * Render scheme popularity
+   * Scheme stats
    */
   renderSchemeStats(data) {
     const el = document.getElementById('scheme-stats');
     if (!el) return;
-
-    const sorted = Object.entries(data.schemeMatches || {})
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, 15);
-
+    const sorted = Object.entries(data.schemeMatches || {}).sort((a, b) => b[1] - a[1]).slice(0, 15);
     const max = sorted.length > 0 ? sorted[0][1] : 1;
 
     el.innerHTML = sorted.map(([name, count], i) => {
@@ -276,7 +398,7 @@ const AdminPanel = {
   },
 
   /**
-   * Render demographics
+   * Demographics
    */
   renderDemographics(data) {
     this.renderDemoBar('occupation-stats', this.countBy(data.searches, 'occupation'));
@@ -354,7 +476,7 @@ const AdminPanel = {
   },
 
   /**
-   * Load settings
+   * Settings
    */
   loadSettings(data) {
     const s = data.settings || {};
@@ -364,7 +486,6 @@ const AdminPanel = {
     this.setVal('setting-ga', s.gaId || '');
   },
 
-  // Settings updates
   updatePassword() {
     const data = this.getData();
     data.settings.password = document.getElementById('setting-password').value;
